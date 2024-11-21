@@ -1,34 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>About Me on Samuel Wade Wang</title>
-    <link>http://localhost:1313/about/</link>
-    <description>Recent content in About Me on Samuel Wade Wang</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <copyright>Copyright (c) 2020-2024 Thulite</copyright>
-    <lastBuildDate>Wed, 20 Nov 2024 20:56:15 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>CV/Resume</title>
-      <link>http://localhost:1313/about/resume/</link>
-      <pubDate>Wed, 20 Nov 2024 17:49:31 -0500</pubDate>
-      <guid>http://localhost:1313/about/resume/</guid>
-      <description>My curriculum vitae and resume.</description>
-    </item>
-    <item>
-      <title>Projects @gatech</title>
-      <link>http://localhost:1313/about/projects/</link>
-      <pubDate>Wed, 20 Nov 2024 20:56:15 -0500</pubDate>
-      <guid>http://localhost:1313/about/projects/</guid>
-      <description>&lt;p&gt;&lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;24&#34;&#xA;  height=&#34;24&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA; &#xA; class=&#34;outline/barrier-block svg-inline&#34; id=&#34;svg-barrier-block&#34; role=&#34;img&#34;&gt;&#xA;  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&#xA;  &lt;path d=&#34;M4 7m0 1a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v7a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1z&#34; /&gt;&#xA;  &lt;path d=&#34;M7 16v4&#34; /&gt;&#xA;  &lt;path d=&#34;M7.5 16l9 -9&#34; /&gt;&#xA;  &lt;path d=&#34;M13.5 16l6.5 -6.5&#34; /&gt;&#xA;  &lt;path d=&#34;M4 13.5l6.5 -6.5&#34; /&gt;&#xA;  &lt;path d=&#34;M17 16v4&#34; /&gt;&#xA;  &lt;path d=&#34;M5 20h4&#34; /&gt;&#xA;  &lt;path d=&#34;M15 20h4&#34; /&gt;&#xA;  &lt;path d=&#34;M17 7v-2&#34; /&gt;&#xA;  &lt;path d=&#34;M7 7v-2&#34; /&gt;&#xA;&lt;/svg&gt; Under Construction!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Informal Self-Introduction</title>
-      <link>http://localhost:1313/about/informal/</link>
-      <pubDate>Wed, 20 Nov 2024 19:56:15 -0500</pubDate>
-      <guid>http://localhost:1313/about/informal/</guid>
-      <description>&lt;p&gt;&lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;24&#34;&#xA;  height=&#34;24&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA; &#xA; class=&#34;outline/barrier-block svg-inline&#34; id=&#34;svg-barrier-block&#34; role=&#34;img&#34;&gt;&#xA;  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&#xA;  &lt;path d=&#34;M4 7m0 1a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v7a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1z&#34; /&gt;&#xA;  &lt;path d=&#34;M7 16v4&#34; /&gt;&#xA;  &lt;path d=&#34;M7.5 16l9 -9&#34; /&gt;&#xA;  &lt;path d=&#34;M13.5 16l6.5 -6.5&#34; /&gt;&#xA;  &lt;path d=&#34;M4 13.5l6.5 -6.5&#34; /&gt;&#xA;  &lt;path d=&#34;M17 16v4&#34; /&gt;&#xA;  &lt;path d=&#34;M5 20h4&#34; /&gt;&#xA;  &lt;path d=&#34;M15 20h4&#34; /&gt;&#xA;  &lt;path d=&#34;M17 7v-2&#34; /&gt;&#xA;  &lt;path d=&#34;M7 7v-2&#34; /&gt;&#xA;&lt;/svg&gt; Under Construction!&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About Me on Samuel Wade Wang</title><link>/about/</link><description>Recent content in About Me on Samuel Wade Wang</description><generator>Hugo</generator><language>en</language><copyright>Copyright (c) 2020-2024 Thulite</copyright><lastBuildDate>Wed, 20 Nov 2024 20:56:15 -0500</lastBuildDate><atom:link href="/about/index.xml" rel="self" type="application/rss+xml"/><item><title>CV/Resume</title><link>/about/resume/</link><pubDate>Wed, 20 Nov 2024 17:49:31 -0500</pubDate><guid>/about/resume/</guid><description>My curriculum vitae and resume.</description></item><item><title>Projects @gatech</title><link>/about/projects/</link><pubDate>Wed, 20 Nov 2024 20:56:15 -0500</pubDate><guid>/about/projects/</guid><description>&lt;p>&lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="24"
+ height="24"
+ viewBox="0 0 24 24"
+ fill="none"
+ stroke="currentColor"
+ stroke-width="2"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ 
+ class="outline/barrier-block svg-inline" id="svg-barrier-block" role="img">
+ &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+ &lt;path d="M4 7m0 1a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v7a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1z" />
+ &lt;path d="M7 16v4" />
+ &lt;path d="M7.5 16l9 -9" />
+ &lt;path d="M13.5 16l6.5 -6.5" />
+ &lt;path d="M4 13.5l6.5 -6.5" />
+ &lt;path d="M17 16v4" />
+ &lt;path d="M5 20h4" />
+ &lt;path d="M15 20h4" />
+ &lt;path d="M17 7v-2" />
+ &lt;path d="M7 7v-2" />
+&lt;/svg> Under Construction!&lt;/p></description></item><item><title>Informal Self-Introduction</title><link>/about/informal/</link><pubDate>Wed, 20 Nov 2024 19:56:15 -0500</pubDate><guid>/about/informal/</guid><description>&lt;p>&lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="24"
+ height="24"
+ viewBox="0 0 24 24"
+ fill="none"
+ stroke="currentColor"
+ stroke-width="2"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ 
+ class="outline/barrier-block svg-inline" id="svg-barrier-block" role="img">
+ &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+ &lt;path d="M4 7m0 1a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v7a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1z" />
+ &lt;path d="M7 16v4" />
+ &lt;path d="M7.5 16l9 -9" />
+ &lt;path d="M13.5 16l6.5 -6.5" />
+ &lt;path d="M4 13.5l6.5 -6.5" />
+ &lt;path d="M17 16v4" />
+ &lt;path d="M5 20h4" />
+ &lt;path d="M15 20h4" />
+ &lt;path d="M17 7v-2" />
+ &lt;path d="M7 7v-2" />
+&lt;/svg> Under Construction!&lt;/p></description></item></channel></rss>
