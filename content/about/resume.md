@@ -17,6 +17,15 @@ seo:
 
 A PDF version can be found [here](https://drive.google.com/drive/folders/1fhbh23qorLGmxr0JRcothJjiCiuWIVbi?usp=drive_link).
 
+## Contact Infos & Socials
+
+- {{< inline-svg "filled/phone" >}} Phone ~ 713-319-5876
+- {{< inline-svg "filled/mail" >}} Email ~ [swang3068@gatech.edu](mailto:swang3068@gatech.edu)
+- {{< inline-svg "filled/brand-linkedin" >}} LinkedIn ~ [swang3068](https://www.linkedin.com/in/swang3068/)
+- {{< inline-svg "filled/brand-github" >}} Github ~ [ZebraAlgebra](https://github.com/ZebraAlgebra/)
+- {{< inline-svg "filled/user" >}} Personal [Website](https://swang3068.netlify.app/)
+- {{< inline-svg "outline/movie" >}} MyAnimeList ~ [CabbageCat](https://myanimelist.net/profile/Cabbage_Cat)
+
 ## Education
 
 | Start     | End       | School                      | Degree            | Location              |
@@ -71,12 +80,3 @@ This page provides an overview. A more detailed description is given in [this pa
 - **Online Course Certificates**:
   - [**Algorithms by Stanford University** on Coursera](https://www.coursera.org/account/accomplishments/specialization/BHQVPXG5K35U) `2023/11`
   - [**CS50's Introduction to Artificial Intelligence with Python by Harvard University** on edX](https://certificates.cs50.io/da3cca83-2a71-4452-8aa2-c8ca7df9f11c.png?size=letter) `2023/03`
-
-## Contact Infos & Socials
-
-- {{< inline-svg "filled/phone" >}} Phone ~ 713-319-5876
-- {{< inline-svg "filled/mail" >}} Email ~ [swang3068@gatech.edu](mailto:swang3068@gatech.edu)
-- {{< inline-svg "filled/brand-linkedin" >}} LinkedIn ~ [swang3068](https://www.linkedin.com/in/swang3068/)
-- {{< inline-svg "filled/brand-github" >}} Github ~ [ZebraAlgebra](https://github.com/ZebraAlgebra/)
-- {{< inline-svg "filled/user" >}} Personal [Website](https://netlify.app)
-- {{< inline-svg "outline/movie" >}} MyAnimeList ~ [CabbageCat](https://myanimelist.net/profile/Cabbage_Cat)
