@@ -50,7 +50,7 @@
 <meta property="og:url" content="http://localhost:1313/math_notes/cvx_optimization/ellipse/">
   <meta property="og:site_name" content="Samuel Wade Wang">
   <meta property="og:title" content="Ellipsoid Method">
-  <meta property="og:description" content="In this article, I will give a brief overview of what ellipsoid method is. A good reference would be the note by Sébastien Bubeck 1.">
+  <meta property="og:description" content="In this article, I will give a brief guide on what the ellipsoid method is. A good reference would be the note by Sébastien Bubeck 1.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="math_notes">
@@ -61,7 +61,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/cover.png">
   <meta name="twitter:title" content="Ellipsoid Method">
-  <meta name="twitter:description" content="In this article, I will give a brief overview of what ellipsoid method is. A good reference would be the note by Sébastien Bubeck 1.">
+  <meta name="twitter:description" content="In this article, I will give a brief guide on what the ellipsoid method is. A good reference would be the note by Sébastien Bubeck 1.">
       <meta name="twitter:site" content="@getdoks">
 
     
@@ -258,7 +258,19 @@
 		
 		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
 			<div class="page-links">
-  
+  <h3>On this page</h3>
+    <nav id="toc">
+  <ul>
+    <li><a href="#0-assumptions-and-settings">0. Assumptions and Settings</a></li>
+    <li><a href="#1-ellipsoidal-shenanigans">1. Ellipsoidal Shenanigans</a>
+      <ul>
+        <li><a href="#11-representation-of-an-ellipsoid">1.1. Representation of an Ellipsoid</a></li>
+        <li><a href="#12-ellipsoiding-halved-ellipsoids">1.2. &ldquo;Ellipsoiding&rdquo; Halved Ellipsoids</a></li>
+      </ul>
+    </li>
+    <li><a href="#onionification">Onionification</a></li>
+  </ul>
+</nav>
 </div>
 
 		</nav>
@@ -276,9 +288,309 @@
 			<h1>Ellipsoid Method</h1>
 			
 			<nav class="toc-mobile d-xl-none" aria-label="Quaternary navigation">
-				
+				<details>
+    <summary>On this page</summary>
+    <div class="page-links">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#0-assumptions-and-settings">0. Assumptions and Settings</a></li>
+    <li><a href="#1-ellipsoidal-shenanigans">1. Ellipsoidal Shenanigans</a>
+      <ul>
+        <li><a href="#11-representation-of-an-ellipsoid">1.1. Representation of an Ellipsoid</a></li>
+        <li><a href="#12-ellipsoiding-halved-ellipsoids">1.2. &ldquo;Ellipsoiding&rdquo; Halved Ellipsoids</a></li>
+      </ul>
+    </li>
+    <li><a href="#onionification">Onionification</a></li>
+  </ul>
+</nav>
+    </div>
+  </details>
+
 			</nav>
-			<p>In this article, I will give a brief overview of what ellipsoid method is. A good reference would be the note by Sébastien Bubeck <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+			<p>In this article, I will give a brief guide on what the <em>ellipsoid method</em> is. A good reference would be the note by Sébastien Bubeck <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p>I will first give a high-level breakdown on why this algorithm works, then establish each separate part of this algorithm. Mathematical proofs are collected in the last part.</p>
+<p>Another optimization that is seldomly used in practice, but conceptually closely-related is the <em>center of gravity</em> method. This will be explained in another article.</p>
+<h2 id="0-assumptions-and-settings">0. Assumptions and Settings<a href="#0-assumptions-and-settings" class="anchor" aria-hidden="true">#</a> </h2>
+<p><strong>Optimization Problem</strong>. Minimize a convex function 
+<span class="math math-inline" id="h-sc-math-0">
+  <img src="/_3678684934578264557.svg" alt="mathematical expression or equation">
+</span> defined over a convex body 
+<span class="math math-inline" id="h-sc-math-1">
+  <img src="/_7005114990735519627.svg" alt="mathematical expression or equation">
+</span>.</p>
+<p>General results on convex analysis guarantees that 
+<span class="math math-inline" id="h-sc-math-2">
+  <img src="/_14430303334312663306.svg" alt="mathematical expression or equation">
+</span> attains minimum on some 
+<span class="math math-inline" id="h-sc-math-3">
+  <img src="/_94946664675522787.svg" alt="mathematical expression or equation">
+</span>.</p>
+<p><strong>Assumptions</strong>. For 
+<span class="math math-inline" id="h-sc-math-4">
+  <img src="/_15713860409395723533.svg" alt="mathematical expression or equation">
+</span>, we make the assumptions:</p>
+<ol>
+<li><strong>Value Bound</strong>. 
+<span class="math math-inline" id="h-sc-math-5">
+  <img src="/_12613849976214766514.svg" alt="mathematical expression or equation">
+</span> for some 
+<span class="math math-inline" id="h-sc-math-6">
+  <img src="/_2465804764368815039.svg" alt="mathematical expression or equation">
+</span>.</li>
+<li><strong>Volume Bound</strong>. 
+<span class="math math-inline" id="h-sc-math-7">
+  <img src="/_16262303689469888009.svg" alt="mathematical expression or equation">
+</span> for some 
+<span class="math math-inline" id="h-sc-math-8">
+  <img src="/_12502393913780785808.svg" alt="mathematical expression or equation">
+</span>, 
+<span class="math math-inline" id="h-sc-math-9">
+  <img src="/_2372976279071528368.svg" alt="mathematical expression or equation">
+</span>; here 
+<span class="math math-inline" id="h-sc-math-10">
+  <img src="/_1113191026217209809.svg" alt="mathematical expression or equation">
+</span> is the open ball centered at 
+<span class="math math-inline" id="h-sc-math-11">
+  <img src="/_864554491853180194.svg" alt="mathematical expression or equation">
+</span> with radius 
+<span class="math math-inline" id="h-sc-math-12">
+  <img src="/_8098463833361076206.svg" alt="mathematical expression or equation">
+</span>.</li>
+</ol>
+<p><strong>Available Oracles</strong>. We assume the following 0th and 1st-order oracles available to us:</p>
+<ol>
+<li><strong>Separation Oracle</strong>. Given 
+<span class="math math-inline" id="h-sc-math-13">
+  <img src="/_6819844990543107254.svg" alt="mathematical expression or equation">
+</span>, we can ask for a direction 
+<span class="math math-inline" id="h-sc-math-14">
+  <img src="/_16103121093636395084.svg" alt="mathematical expression or equation">
+</span> with 
+<span class="math math-inline" id="h-sc-math-15">
+  <img src="/_14028344308197866873.svg" alt="mathematical expression or equation">
+</span>, where 
+<span class="math math-inline" id="h-sc-math-16">
+  <img src="/_16313248781015587073.svg" alt="mathematical expression or equation">
+</span> is the half space 
+<span class="math math-inline" id="h-sc-math-17">
+  <img src="/_14772923943546681037.svg" alt="mathematical expression or equation">
+</span>.</li>
+<li><strong>Subgradient Oracle</strong>. Given 
+<span class="math math-inline" id="h-sc-math-18">
+  <img src="/_18400832302317664120.svg" alt="mathematical expression or equation">
+</span>, we can ask for a direction 
+<span class="math math-inline" id="h-sc-math-19">
+  <img src="/_14256230624860867440.svg" alt="mathematical expression or equation">
+</span>.</li>
+</ol>
+<h2 id="1-ellipsoidal-shenanigans">1. Ellipsoidal Shenanigans<a href="#1-ellipsoidal-shenanigans" class="anchor" aria-hidden="true">#</a> </h2>
+<h3 id="11-representation-of-an-ellipsoid">1.1. Representation of an Ellipsoid<a href="#11-representation-of-an-ellipsoid" class="anchor" aria-hidden="true">#</a> </h3>
+<p>An ellipsoid 
+<span class="math math-inline" id="h-sc-math-20">
+  <img src="/_6316391470500585904.svg" alt="mathematical expression or equation">
+</span> is an affine image of 
+<span class="math math-inline" id="h-sc-math-21">
+  <img src="/_16975846858551638692.svg" alt="mathematical expression or equation">
+</span>. It can be represented as:</p>
+
+<span class="math math-block text-center" id="h-sc-math-22">
+  <img src="/_12238732125526448474.svg" alt="mathematical expression or equation">
+</span>
+<p>where 
+<span class="math math-inline" id="h-sc-math-23">
+  <img src="/_17676598118012753723.svg" alt="mathematical expression or equation">
+</span> is SPD (symmetric positive definite) (assuming it having positive volume), admitting a decomposition 
+<span class="math math-inline" id="h-sc-math-24">
+  <img src="/_1194495425933788673.svg" alt="mathematical expression or equation">
+</span>; such 
+<span class="math math-inline" id="h-sc-math-25">
+  <img src="/_7978025892747948040.svg" alt="mathematical expression or equation">
+</span> then describes 
+<span class="math math-inline" id="h-sc-math-26">
+  <img src="/_12881081297432463561.svg" alt="mathematical expression or equation">
+</span> as 
+<span class="math math-inline" id="h-sc-math-27">
+  <img src="/_974785179617204643.svg" alt="mathematical expression or equation">
+</span>, hence an ellipsoid.</p>
+<h3 id="12-ellipsoiding-halved-ellipsoids">1.2. &ldquo;Ellipsoiding&rdquo; Halved Ellipsoids<a href="#12-ellipsoiding-halved-ellipsoids" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Here is a fun problem in geometry:</p>
+<div class="callout callout-none d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/question-mark svg-inline callout-icon me-2 mb-3" id="svg-question-mark" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4" />
+  <path d="M12 19l0 .01" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Question</p>
+
+      </div>
+    <div class="callout-body">
+      <p>Given an ellipsoid with positive volume
+<span class="math math-inline" id="h-sc-math-0">
+<img src="/_10307490879853883880.svg" alt="mathematical expression or equation">
+</span>, a direction
+<span class="math math-inline" id="h-sc-math-1">
+<img src="/_16103121093636395084.svg" alt="mathematical expression or equation">
+</span>, how small an ellipsoid (in terms of volume)
+<span class="math math-inline" id="h-sc-math-2">
+<img src="/_11066828579748522323.svg" alt="mathematical expression or equation">
+</span> can we find so that it encloses the halved ellipsoid
+<span class="math math-inline" id="h-sc-math-3">
+<img src="/_1012383773473901217.svg" alt="mathematical expression or equation">
+</span>?</p>
+
+    </div>
+  </div>
+</div>
+
+<p>The case 
+<span class="math math-inline" id="h-sc-math-29">
+  <img src="/_15002775166729714144.svg" alt="mathematical expression or equation">
+</span> is trivial, so we assume 
+<span class="math math-inline" id="h-sc-math-30">
+  <img src="/_6209109223285847806.svg" alt="mathematical expression or equation">
+</span>.</p>
+<p>It would be illustrative to work out the case where 
+<span class="math math-inline" id="h-sc-math-31">
+  <img src="/_1502356985332139780.svg" alt="mathematical expression or equation">
+</span>, and 
+<span class="math math-inline" id="h-sc-math-32">
+  <img src="/_7658069062394079949.svg" alt="mathematical expression or equation">
+</span>, then map it back using 
+<span class="math math-inline" id="h-sc-math-33">
+  <img src="/_13014478409234219846.svg" alt="mathematical expression or equation">
+</span>. We want 
+<span class="math math-inline" id="h-sc-math-34">
+  <img src="/_16392668991629313030.svg" alt="mathematical expression or equation">
+</span> and 
+<span class="math math-inline" id="h-sc-math-35">
+  <img src="/_1002358803670004910.svg" alt="mathematical expression or equation">
+</span> lie in 
+<span class="math math-inline" id="h-sc-math-36">
+  <img src="/_8656778206061483499.svg" alt="mathematical expression or equation">
+</span>, so we define:</p>
+
+<span class="math math-block text-center" id="h-sc-math-37">
+  <img src="/_11913361227141113801.svg" alt="mathematical expression or equation">
+</span>
+<p>with 
+<span class="math math-inline" id="h-sc-math-38">
+  <img src="/_14604260368814290230.svg" alt="mathematical expression or equation">
+</span>; note that 
+<span class="math math-inline" id="h-sc-math-39">
+  <img src="/_15723646648105490883.svg" alt="mathematical expression or equation">
+</span>, 
+<span class="math math-inline" id="h-sc-math-40">
+  <img src="/_12942689366327385808.svg" alt="mathematical expression or equation">
+</span> for 
+<span class="math math-inline" id="h-sc-math-41">
+  <img src="/_11662112883009851340.svg" alt="mathematical expression or equation">
+</span>. By this requirement, we formulate the optimization problem:</p>
+
+<span class="math math-block text-center" id="h-sc-math-42">
+  <img src="/_391056304005043408.svg" alt="mathematical expression or equation">
+</span>
+
+<span class="math math-block text-center" id="h-sc-math-43">
+  <img src="/_14288835403267626811.svg" alt="mathematical expression or equation">
+</span>
+<p>After expressing 
+<span class="math math-inline" id="h-sc-math-44">
+  <img src="/_10939471976984967165.svg" alt="mathematical expression or equation">
+</span> via 
+<span class="math math-inline" id="h-sc-math-45">
+  <img src="/_1742195383449739164.svg" alt="mathematical expression or equation">
+</span>, we have by calculus that the optimal point is 
+<span class="math math-inline" id="h-sc-math-46">
+  <img src="/_14187956266193615304.svg" alt="mathematical expression or equation">
+</span> with value:</p>
+
+<span class="math math-block text-center" id="h-sc-math-47">
+  <img src="/_8173280248570515925.svg" alt="mathematical expression or equation">
+</span>
+<p>After taking account the rescaling of 
+<span class="math math-inline" id="h-sc-math-48">
+  <img src="/_4261900879391906942.svg" alt="mathematical expression or equation">
+</span> and the remapping of points 
+<span class="math math-inline" id="h-sc-math-49">
+  <img src="/_16332667821700081595.svg" alt="mathematical expression or equation">
+</span>, we get:</p>
+<div class="callout callout-note d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/note svg-inline callout-icon me-2 mb-3" id="svg-note" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M13 20l7 -7" />
+  <path d="M13 20v-6a1 1 0 0 1 1 -1h6v-7a2 2 0 0 0 -2 -2h-12a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Lemma 1</p>
+
+      </div>
+    <div class="callout-body">
+      <p>For
+<span class="math math-inline" id="h-sc-math-0">
+<img src="/_11181171538899896716.svg" alt="mathematical expression or equation">
+</span>, we get:</p>
+<span class="math math-block" id="h-sc-math-1">
+  <img src="/_6696714979016336032.svg" alt="mathematical expression or equation">
+</span>
+where:
+<span class="math math-block" id="h-sc-math-2">
+  <img src="/_9603880183377262840.svg" alt="mathematical expression or equation">
+</span>
+
+    </div>
+  </div>
+</div>
+
+<h2 id="onionification">Onionification<a href="#onionification" class="anchor" aria-hidden="true">#</a> </h2>
+<p><svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/barrier-block svg-inline" id="svg-barrier-block" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 7m0 1a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v7a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1z" />
+  <path d="M7 16v4" />
+  <path d="M7.5 16l9 -9" />
+  <path d="M13.5 16l6.5 -6.5" />
+  <path d="M4 13.5l6.5 -6.5" />
+  <path d="M17 16v4" />
+  <path d="M5 20h4" />
+  <path d="M15 20h4" />
+  <path d="M17 7v-2" />
+  <path d="M7 7v-2" />
+</svg> Under Construction!</p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>

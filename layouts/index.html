@@ -9,6 +9,9 @@
       <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="/about/" role="button">About Me</a>
       <a class="btn btn-info btn-cta rounded-pill btn-lg my-3" href="/blog/" role="button">Blog</a>
       <a class="btn btn-danger btn-cta rounded-pill btn-lg my-3" href="/math_notes/" role="button">Math Notes</a>
+      <div class="text-secondary">
+        (Last updated: {{ .Lastmod | time.Format ":date_short" }} {{ .Lastmod | time.Format ":time_full" }} EST)
+      </div>
       <div class="my-3">
         {{ .Content }}
       </div>
@@ -45,7 +48,7 @@
         </div>
         <div class="col-md-5">
           <h2 class="h4">Optimization</h2>
-          <p>Formulate and solve problems to identify solutions under given constraints, heart of many learning algorithms.</p>
+          <p>Coming up with ways of min(max)imizing objectives of interest with respect to given constraints.</p>
         </div>
       </div>
     </div>

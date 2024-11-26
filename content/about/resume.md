@@ -69,7 +69,7 @@ This page provides an overview. A more detailed description is given in [this pa
 ## Miscellaneous Experience
 
 - **3DGauCIM: Accelerating 3D Gaussian Splatting via Digital Compute-in-Memory for Real-Time Edge Rendering** `2024/08-2024/11` `publication`
-  - Forth author in a publication to appear on DAC (Digital Automation Conference)
+  - Fourth author in a publication to appear on DAC (Digital Automation Conference)
   - Helped producing rigorous key 3D visuals illustrating main ideas using Matplotlib, and modularized it as a Python dataclass for the paper's main authors to easily make tweaks on it (such as switching on and off the plot components, using other color schemes or sizes)
   - Simplified and streamlined the mathematical formulations of Gaussian splatting (both 4D and 3D temporal)
 - [**Convex Analysis Notes**](https://github.com/ZebraAlgebra/convex-analysis-notes) `2024/08–2024/10` `ML Theory` `Optimization` `LaTeX` `Git`
