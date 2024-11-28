@@ -1,76 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Welcome! on Samuel Wade Wang</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in Welcome! on Samuel Wade Wang</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <copyright>Copyright (c) 2020-2024 Thulite</copyright>
-    <lastBuildDate>Thu, 21 Nov 2024 01:58:02 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hello Personal Page!</title>
-      <link>http://localhost:1313/blog/hello-personal-page/</link>
-      <pubDate>Mon, 18 Nov 2024 23:03:20 +0200</pubDate>
-      <guid>http://localhost:1313/blog/hello-personal-page/</guid>
-      <description>First post on Hugo Blog!</description>
-    </item>
-    <item>
-      <title>CV/Resume</title>
-      <link>http://localhost:1313/about/resume/</link>
-      <pubDate>Wed, 20 Nov 2024 17:49:31 -0500</pubDate>
-      <guid>http://localhost:1313/about/resume/</guid>
-      <description>My curriculum vitae and resume.</description>
-    </item>
-    <item>
-      <title>Projects @gatech</title>
-      <link>http://localhost:1313/about/projects/</link>
-      <pubDate>Wed, 20 Nov 2024 20:56:15 -0500</pubDate>
-      <guid>http://localhost:1313/about/projects/</guid>
-      <description>&lt;p&gt;&lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;24&#34;&#xA;  height=&#34;24&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA; &#xA; class=&#34;outline/barrier-block svg-inline&#34; id=&#34;svg-barrier-block&#34; role=&#34;img&#34;&gt;&#xA;  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&#xA;  &lt;path d=&#34;M4 7m0 1a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v7a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1z&#34; /&gt;&#xA;  &lt;path d=&#34;M7 16v4&#34; /&gt;&#xA;  &lt;path d=&#34;M7.5 16l9 -9&#34; /&gt;&#xA;  &lt;path d=&#34;M13.5 16l6.5 -6.5&#34; /&gt;&#xA;  &lt;path d=&#34;M4 13.5l6.5 -6.5&#34; /&gt;&#xA;  &lt;path d=&#34;M17 16v4&#34; /&gt;&#xA;  &lt;path d=&#34;M5 20h4&#34; /&gt;&#xA;  &lt;path d=&#34;M15 20h4&#34; /&gt;&#xA;  &lt;path d=&#34;M17 7v-2&#34; /&gt;&#xA;  &lt;path d=&#34;M7 7v-2&#34; /&gt;&#xA;&lt;/svg&gt; Under Construction!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Example Guide</title>
-      <link>http://localhost:1313/docs_/guides/example/</link>
-      <pubDate>Thu, 07 Sep 2023 16:04:48 +0200</pubDate>
-      <guid>http://localhost:1313/docs_/guides/example/</guid>
-      <description>&lt;p&gt;Guides lead a user through a specific task they want to accomplish, often with a sequence of steps. Writing a good guide requires thinking about what your users are trying to do.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Example Reference</title>
-      <link>http://localhost:1313/docs_/reference/example/</link>
-      <pubDate>Thu, 07 Sep 2023 16:13:18 +0200</pubDate>
-      <guid>http://localhost:1313/docs_/reference/example/</guid>
-      <description>&lt;p&gt;Reference pages are ideal for outlining how things work in terse and clear terms. Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what your documenting.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Resources</title>
-      <link>http://localhost:1313/docs_/resources/</link>
-      <pubDate>Tue, 27 Feb 2024 09:30:56 +0100</pubDate>
-      <guid>http://localhost:1313/docs_/resources/</guid>
-      <description>&lt;p&gt;Link to valuable, relevant resources.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Convex Analysis</title>
-      <link>http://localhost:1313/math_notes/cvx_analysis/</link>
-      <pubDate>Thu, 21 Nov 2024 01:58:02 -0500</pubDate>
-      <guid>http://localhost:1313/math_notes/cvx_analysis/</guid>
-      <description>&lt;p&gt;I wrote a note on the subject of convex analysis, following Bertsekas&amp;rsquo; book. &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; Here are the &lt;a href=&#34;https://github.com/ZebraAlgebra/convex-analysis-notes&#34;&gt;Github link&lt;/a&gt; (hosting LaTeX files) and the &lt;a href=&#34;https://drive.google.com/drive/folders/1LIo2TSpO3cyZ70t-df9wH7gtsHoRbBNA&#34;&gt;Google drive link&lt;/a&gt; (hosting latest PDF).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Ellipsoid Method</title>
-      <link>http://localhost:1313/math_notes/cvx_optimization/ellipse/</link>
-      <pubDate>Thu, 21 Nov 2024 01:58:02 -0500</pubDate>
-      <guid>http://localhost:1313/math_notes/cvx_optimization/ellipse/</guid>
-      <description>&lt;p&gt;In this article, I will give a brief guide on what the &lt;em&gt;ellipsoid method&lt;/em&gt; is. A good reference would be the note by Sébastien Bubeck &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Keyboard Shortcuts</title>
-      <link>http://localhost:1313/keyboards/</link>
-      <pubDate>Wed, 20 Nov 2024 17:25:48 -0500</pubDate>
-      <guid>http://localhost:1313/keyboards/</guid>
-      <description>&lt;p&gt;The following are some canonical keyboard shortcuts for navigating this site:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;Keys&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;Action&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;Ctrl + K&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;Opens Search Bar&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Welcome! on Samuel Wade Wang</title><link>/</link><description>Recent content in Welcome! on Samuel Wade Wang</description><generator>Hugo</generator><language>en</language><copyright>Copyright (c) 2020-2024 Thulite</copyright><lastBuildDate>Thu, 21 Nov 2024 01:58:02 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello Personal Page!</title><link>/blog/hello-personal-page/</link><pubDate>Mon, 18 Nov 2024 23:03:20 +0200</pubDate><guid>/blog/hello-personal-page/</guid><description>First post on Hugo Blog!</description></item><item><title>CV/Resume</title><link>/about/resume/</link><pubDate>Wed, 20 Nov 2024 17:49:31 -0500</pubDate><guid>/about/resume/</guid><description>My curriculum vitae and resume.</description></item><item><title>Projects @gatech</title><link>/about/projects/</link><pubDate>Wed, 20 Nov 2024 20:56:15 -0500</pubDate><guid>/about/projects/</guid><description>&lt;p>&lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="24"
+ height="24"
+ viewBox="0 0 24 24"
+ fill="none"
+ stroke="currentColor"
+ stroke-width="2"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ 
+ class="outline/barrier-block svg-inline" id="svg-barrier-block" role="img">
+ &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+ &lt;path d="M4 7m0 1a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v7a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1z" />
+ &lt;path d="M7 16v4" />
+ &lt;path d="M7.5 16l9 -9" />
+ &lt;path d="M13.5 16l6.5 -6.5" />
+ &lt;path d="M4 13.5l6.5 -6.5" />
+ &lt;path d="M17 16v4" />
+ &lt;path d="M5 20h4" />
+ &lt;path d="M15 20h4" />
+ &lt;path d="M17 7v-2" />
+ &lt;path d="M7 7v-2" />
+&lt;/svg> Under Construction!&lt;/p></description></item><item><title>Example Guide</title><link>/docs_/guides/example/</link><pubDate>Thu, 07 Sep 2023 16:04:48 +0200</pubDate><guid>/docs_/guides/example/</guid><description>&lt;p>Guides lead a user through a specific task they want to accomplish, often with a sequence of steps. Writing a good guide requires thinking about what your users are trying to do.&lt;/p></description></item><item><title>Example Reference</title><link>/docs_/reference/example/</link><pubDate>Thu, 07 Sep 2023 16:13:18 +0200</pubDate><guid>/docs_/reference/example/</guid><description>&lt;p>Reference pages are ideal for outlining how things work in terse and clear terms. Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what your documenting.&lt;/p></description></item><item><title>Resources</title><link>/docs_/resources/</link><pubDate>Tue, 27 Feb 2024 09:30:56 +0100</pubDate><guid>/docs_/resources/</guid><description>&lt;p>Link to valuable, relevant resources.&lt;/p></description></item><item><title>Convex Analysis</title><link>/math_notes/cvx_analysis/</link><pubDate>Thu, 21 Nov 2024 01:58:02 -0500</pubDate><guid>/math_notes/cvx_analysis/</guid><description>&lt;p>I wrote a note on the subject of convex analysis, following Bertsekas&amp;rsquo; book. &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> Here are the &lt;a href="https://github.com/ZebraAlgebra/convex-analysis-notes">Github link&lt;/a> (hosting LaTeX files) and the &lt;a href="https://drive.google.com/drive/folders/1LIo2TSpO3cyZ70t-df9wH7gtsHoRbBNA">Google drive link&lt;/a> (hosting latest PDF).&lt;/p></description></item><item><title>Ellipsoid Method</title><link>/math_notes/cvx_optimization/ellipse/</link><pubDate>Thu, 21 Nov 2024 01:58:02 -0500</pubDate><guid>/math_notes/cvx_optimization/ellipse/</guid><description>&lt;p>In this article, I will give a brief guide on what the &lt;em>ellipsoid method&lt;/em> is. A good reference would be the note by Sébastien Bubeck &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>.&lt;/p></description></item><item><title>Keyboard Shortcuts</title><link>/keyboards/</link><pubDate>Wed, 20 Nov 2024 17:25:48 -0500</pubDate><guid>/keyboards/</guid><description>&lt;p>The following are some canonical keyboard shortcuts for navigating this site:&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">Keys&lt;/th>
+ &lt;th style="text-align: center">Action&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">&lt;code>Ctrl + K&lt;/code>&lt;/td>
+ &lt;td style="text-align: center">Opens Search Bar&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item></channel></rss>
