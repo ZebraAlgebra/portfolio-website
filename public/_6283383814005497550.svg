@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg style="vertical-align: -0.452ex" xmlns="http://www.w3.org/2000/svg" width="290.498ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 128400 950">
+<style>
+  * {
+    fill: ;
+    background-color: transparent;
+  }
+</style><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="merror" data-mjx-error="Invalid environment name 'align\_'" title="Invalid environment name 'align\_'"><title>Invalid environment name 'align\_'</title><g data-mml-node="mtext" style="font-family: serif"><text data-variant="-explicitFont" transform="scale(1,-1)" font-size="884px"> \begin{align*}f(x*t)&amp;\leq \inf f(\{c*i\}\*{i=1}^t)\leq \inf f(\mathcal{S}\_1\smallsetminus\mathcal{S}*{t+1})\\&amp;\leq \inf f(X*\varepsilon\smallsetminus\mathcal{S}*{t+1})\leq f^\ast+2B\varepsilon \end{align\_}  </text></g></g></g></g></svg>

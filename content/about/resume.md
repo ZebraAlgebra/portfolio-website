@@ -20,6 +20,7 @@ A PDF version can be found [here](https://drive.google.com/drive/folders/1fhbh23
 ## Contact Infos & Socials
 
 - {{< inline-svg "filled/phone" >}} Phone ~ 713-319-5876
+- {{< inline-svg "filled/home" >}} Location ~ Atlanta, Georgia, U.S.A.
 - {{< inline-svg "filled/mail" >}} Email ~ [swang3068@gatech.edu](mailto:swang3068@gatech.edu)
 - {{< inline-svg "filled/brand-linkedin" >}} LinkedIn ~ [swang3068](https://www.linkedin.com/in/swang3068/)
 - {{< inline-svg "filled/brand-github" >}} Github ~ [ZebraAlgebra](https://github.com/ZebraAlgebra/)
