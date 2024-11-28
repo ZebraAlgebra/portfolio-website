@@ -76,11 +76,11 @@ Suppose at time {{< math >}}$t${{< /math >}}, the remaining uncontrolled region 
 
 {{< math class="text-center">}}$$\mathcal{X}=\mathcal{S}_1\supset\mathcal{S}_2\supset\mathcal{S}_3\supset\dotsc$${{< /math >}}
 
-As the old adage goes (or this might just be something I randomly came up with, please do not fact check):
+As an old adage goes:
 
 > To control an onion, all you have to do is to control its peels.
 
-Mathematically, this is expressed as {{< math >}}$\mathcal{S}_1\setminus\mathcal{S}_{t+1}=\coprod_{i=1}^tP_t${{< /math >}}, where {{< math >}}$P_t:=\mathcal{S}_{t+1}\setminus\mathcal{S}_t${{< /math >}} are the peels.
+we mathematically express {{< math >}}$\mathcal{S}_1\setminus\mathcal{S}_{t+1}=\coprod_{i=1}^tP_t${{< /math >}}, where {{< math >}}$P_t:=\mathcal{S}_{t+1}\setminus\mathcal{S}_t${{< /math >}} are the peels, and formulate strategies to control {{< math >}}$P_t${{< /math >}}.
 
 Now for each set {{< math >}}$P_t${{< /math >}}, say we have a point {{< math >}}$c_t\in\mathbb{R}^m${{< /math >}} with either {{< math >}}$P_t=\emptyset${{< /math >}}, or {{< math >}}$c_t\in \mathcal{X}${{< /math >}} with {{< math >}}$f(c_t)\leq \inf f(P_t)${{< /math >}}, then by taking {{< math >}}$x_t=\operatorname{argmin}f(\{c_i\}_{i=1}^t)${{< /math >}}, and assuming {{< math >}}$\operatorname{vol}(\mathcal{S}_t)\to 0${{< /math >}}, we in fact have {{< math >}}$f(x_t)\to f^\ast${{< /math >}}. For a proof, note that for any {{< math >}}$\varepsilon>0${{< /math >}}, the volume bounds on {{< math >}}$\mathcal{X}_\varepsilon${{< /math >}} shows that {{< math >}}$\mathcal{S}_t${{< /math >}} cannot contain {{< math >}}$\mathcal{X}_\varepsilon${{< /math >}} for large enough {{< math >}}$t${{< /math >}}, while we have:
 
@@ -93,7 +93,7 @@ The following diagram might be useful for navigating the definitions and symbols
 
 ![Schematic depiction of the abstract idea of onionification.](images/ellipse/onion.jpg)
 
-In optimization, we are also interested in the question of the speed of convergence. By this estimate, we see that it depends on {{< math >}}$\operatorname{vol}(\mathcal{S}_t)${{< /math >}}. In ellipsoid methods - as one can guess it - these are given manipulation with ellipsoids; in center of gravity methods, these are given by other means.
+In optimization, we are also interested in the question of the speed of convergence. By using the same idea for estimation, we see that it depends on {{< math >}}$\operatorname{vol}(\mathcal{S}_t)${{< /math >}}. In ellipsoid methods - as one can guess it - these are given manipulation with ellipsoids; in center of gravity methods, these are given by other means.
 
 ### 1.4. Using Ellipsoids and Subgradients
 
@@ -121,13 +121,15 @@ For {{< math >}}$t\geq 2m^2\log(Rr^{-1})${{< /math >}}, we have {{< math >}}$x_t
 
 A bit of interpretation on this result, which would illustrate some cool characteristics of this algorithm:
 
-1. The _analytical complexity_ (that is, the number of calls to the oracles needed) to guarantee an accuracy to {{< math >}}$\varepsilon${{< /math >}} is {{< math >}}$m^2\log(Rr^{-1}\varepsilon^{-1})${{< /math >}}, from a black-box optimization perspective.
+1. The _analytical complexity_ (that is, the number of calls to the oracles needed) to guarantee an accuracy to {{< math >}}$O(\varepsilon)${{< /math >}} is {{< math >}}$m^2\log(Rr^{-1}\varepsilon^{-1})${{< /math >}}, from a black-box optimization perspective.
 2. In such sense, it is a _dimension-dependent_ algorithm - as dimension grows, the calls needed grows.
 3. As one can see later, the cost update are just some matrix-vector multiplications, as opposed to center-of-gravity which although have a better analytical complexity (which is {{< math >}}$\varepsilon${{< /math >}}), but each time step requires the computation of a nontrivial integral, in which in the most easy cases exact solvers still needs exponential computation time.
 
 ## 2. Ellipsoidal Shenanigans
 
-Now let us look at some technical tools and results that allow us to work with ellipsoids, tying together the lose ends introduced in the algorithm above. It is just a very brief note on how the math is done, leaving out much of the book-keeping and formula derivations.
+Now let us look at some technical tools and results that allow us to work with ellipsoids, tying together the lose ends introduced in the algorithm above.
+
+It is just a brief note on how the math is done, leaving out much of the book-keeping and formula derivations. For even more casual readers, you have already understand what ellipsoid method does🎉!
 
 ### 2.1. Representation of an Ellipsoid
 
