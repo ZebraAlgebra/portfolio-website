@@ -16,9 +16,7 @@ In this article, I will give a brief guide on what the _ellipsoid method_ is. A 
 
 [^1]: Bubeck, Sébastien. _"Convex optimization: Algorithms and complexity."_ Foundations and Trends® in Machine Learning 8.3-4 (2015): 231-357.
 
-I will first give a high-level breakdown on why this algorithm works, then establish each separate part of this algorithm. Mathematical proofs are collected in the last part.
-
-Another optimization algorithm that is seldomly used in practice, but conceptually closely-related is the _center of gravity_ method. This will be explained in another article.
+I will first give a high-level breakdown on why this algorithm works, then briefly write about how mathematically the ellipsoids are manipulated. Another optimization algorithm that is seldomly used in practice, but conceptually closely-related is the _center of gravity_ method. This will be explained in another article.
 
 ## 1. Setting the Stage
 
@@ -31,7 +29,7 @@ General results on convex analysis guarantees that {{< math >}}$f${{< /math >}} 
 **Assumptions**. For {{< math >}}$f,\mathcal{X}${{< /math >}}, we make the assumptions:
 
 1. **Value Bound**. {{< math >}}$\|f\|_{\mathcal{X},\infty}:=\{|f(x)|:x\in \mathcal{X}\}\leq B${{< /math >}} for some {{< math >}}$B>0${{< /math >}}.
-2. **Volume Bound**. {{< math >}}$B(z_1;r)\subset\mathcal{X}\subset B(z_2;R)${{< /math >}} for some {{< math >}}$x_1,x_2\in\mathbb{R}^m${{< /math >}}, {{< math >}}$0<r<R${{< /math >}}; here {{< math >}}$B(z;d)${{< /math >}} is the open ball centered at {{< math >}}$x${{< /math >}} with radius {{< math >}}$d${{< /math >}}.
+2. **Volume Bound**. {{< math >}}$B(z_1;r)\subset\mathcal{X}\subset B(z_2;R)${{< /math >}} for some {{< math >}}$z_1,z_2\in\mathbb{R}^m${{< /math >}}, {{< math >}}$0<r<R${{< /math >}}; here {{< math >}}$B(z;d)${{< /math >}} is the open ball centered at {{< math >}}$z${{< /math >}} with radius {{< math >}}$d${{< /math >}}.
 
 **Available Oracles**. We assume the following 0th and 1st-order oracles available to us:
 
@@ -40,23 +38,11 @@ General results on convex analysis guarantees that {{< math >}}$f${{< /math >}} 
 
 ### 1.2. Utilizing Volume and Value Bounds via Shrinking
 
-To simplify notation, given {{< math >}}$X,Y\subset\mathbb{R}^m,Z\subset\mathbb{R}${{< /math >}}, we can formulate a set
+Intuitively, points close to {{< math >}}$x^\ast${{< /math >}} shouldn't be too bad. Although we do not know {{< math >}}$x^\ast${{< /math >}}, it still makes sense to consider the following construction: Given {{< math >}}$\varepsilon\in[0,1]${{< /math >}}, define the set (which can be thought of _shrinking_ towards {{< math >}}$x^\ast${{< /math >}}):
 
-{{< math class="text-center">}}
+{{< math class="text-center">}}$$\mathcal{X}_{\varepsilon}=\{(1-\varepsilon)x^\ast+\varepsilon x:x\in X\}$${{< /math >}}
 
-$$
-I(X,Y;Z):=\{(1-z)x+zy:(x,y,z)\in X\times Y\times Z\}
-$$
-
-{{< /math >}}
-
-so for instance, setting {{< math >}}$Z=[0,1]${{< /math >}} gives convex combinations of elements between {{< math >}}$X,Y${{< /math >}}.
-
-Intuitively, points close to {{< math >}}$x^\ast${{< /math >}} shouldn't be too bad. Although we do not know {{< math >}}$x^\ast${{< /math >}}, it still makes sense to consider the following construction: Given {{< math >}}$\varepsilon\in[0,1]${{< /math >}}, define the set:
-
-{{< math class="text-center">}}$$\mathcal{X}_{\varepsilon}=I(x^\ast,X;\varepsilon)$${{< /math >}}
-
-Here we do not make clear distinctions between one-element sets and elements. On this set, we have the function bounds and volume bounds on {{< math class="text-center">}}$\mathcal{X}_{\varepsilon}${{< /math >}}:
+On this set, we have the function bounds and volume bounds on {{< math class="text-center">}}$\mathcal{X}_{\varepsilon}${{< /math >}}:
 
 {{< math class="text-center">}}$$\sup f(\mathcal{X}_\varepsilon)\leq f^\ast+2\varepsilon B$${{< /math >}}
 
@@ -123,7 +109,7 @@ A bit of interpretation on this result, which would illustrate some cool charact
 
 1. The _analytical complexity_ (that is, the number of calls to the oracles needed) to guarantee an accuracy to {{< math >}}$O(\varepsilon)${{< /math >}} is {{< math >}}$m^2\log(Rr^{-1}\varepsilon^{-1})${{< /math >}}, from a black-box optimization perspective.
 2. In such sense, it is a _dimension-dependent_ algorithm - as dimension grows, the calls needed grows.
-3. As one can see later, the cost update are just some matrix-vector multiplications, as opposed to center-of-gravity which although have a better analytical complexity (which is {{< math >}}$\varepsilon${{< /math >}}), but each time step requires the computation of a nontrivial integral, in which in the most easy cases exact solvers still needs exponential computation time.
+3. As one can see later, the cost update are just some matrix-vector multiplications, as opposed to center-of-gravity which although have a better analytical complexity (of {{< math >}}$m\log(Rr^{-1}\varepsilon^{-1})${{< /math >}}), but each time step requires the computation of a nontrivial integral, in which in the most easy cases exact solvers still needs exponential computation time.
 
 ## 2. Ellipsoidal Shenanigans
 
@@ -219,8 +205,8 @@ where:
 
 $$
 \begin{cases}
-&c=c_0-\frac{1}{n+1}\frac{H_0w}{\sqrt{w^TH_0w}}\\
-&H=\frac{n^2}{n^2-1}\left(H_0-\frac{2}{n+1}\frac{H_0ww^TH_0}{w^TH_0w}\right)
+&c=c_0-\frac{1}{m+1}\frac{H_0w}{\sqrt{w^TH_0w}}\\
+&H=\frac{m^2}{m^2-1}\left(H_0-\frac{2}{m+1}\frac{H_0ww^TH_0}{w^TH_0w}\right)
 \end{cases}
 $$
 
