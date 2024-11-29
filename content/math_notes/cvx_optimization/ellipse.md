@@ -66,7 +66,7 @@ As an old adage goes:
 
 > To control an onion, all you have to do is to control its peels.
 
-we mathematically express {{< math >}}$\mathcal{S}_1\setminus\mathcal{S}_{t+1}=\coprod_{i=1}^tP_t${{< /math >}}, where {{< math >}}$P_t:=\mathcal{S}_{t+1}\setminus\mathcal{S}_t${{< /math >}} are the peels, and formulate strategies to control {{< math >}}$P_t${{< /math >}}.
+we mathematically express {{< math >}}$\mathcal{S}_1\setminus\mathcal{S}_{t+1}=\coprod_{i=1}^tP_t${{< /math >}}, where {{< math >}}$P_t:=\mathcal{S}_{t}\setminus\mathcal{S}_{t+1}${{< /math >}} are the peels, and formulate strategies to control {{< math >}}$P_t${{< /math >}}.
 
 Now for each set {{< math >}}$P_t${{< /math >}}, say we have a point {{< math >}}$c_t\in\mathbb{R}^m${{< /math >}} with either {{< math >}}$P_t=\emptyset${{< /math >}}, or {{< math >}}$c_t\in \mathcal{X}${{< /math >}} with {{< math >}}$f(c_t)\leq \inf f(P_t)${{< /math >}}, then by taking {{< math >}}$x_t=\operatorname{argmin}f(\{c_i\}_{i=1}^t)${{< /math >}}, and assuming {{< math >}}$\operatorname{vol}(\mathcal{S}_t)\to 0${{< /math >}}, we in fact have {{< math >}}$f(x_t)\to f^\ast${{< /math >}}. For a proof, note that for any {{< math >}}$\varepsilon>0${{< /math >}}, the volume bounds on {{< math >}}$\mathcal{X}_\varepsilon${{< /math >}} shows that {{< math >}}$\mathcal{S}_t${{< /math >}} cannot contain {{< math >}}$\mathcal{X}_\varepsilon${{< /math >}} for large enough {{< math >}}$t${{< /math >}}, while we have:
 
@@ -79,7 +79,7 @@ The following diagram might be useful for navigating the definitions and symbols
 
 ![Schematic depiction of the abstract idea of onionification.](images/ellipse/onion.jpg)
 
-In optimization, we are also interested in the question of the speed of convergence. By using the same idea for estimation, we see that it depends on {{< math >}}$\operatorname{vol}(\mathcal{S}_t)${{< /math >}}. In ellipsoid methods - as one can guess it - these are given manipulation with ellipsoids; in center of gravity methods, these are given by other means.
+In optimization, we are also interested in the question of the speed of convergence. By using the same idea for estimation, we see that it depends on {{< math >}}$\operatorname{vol}(\mathcal{S}_t)${{< /math >}}. In ellipsoid methods - as one can guess it - these are given by manipulations with ellipsoids; in center of gravity methods, these are given by other means.
 
 ### 1.4. Using Ellipsoids and Subgradients
 
@@ -119,7 +119,7 @@ It is just a brief note on how the math is done, leaving out much of the book-ke
 
 ### 2.1. Representation of an Ellipsoid
 
-An ellipsoid {{< math >}}$\mathcal{E}\subset\mathbb{R}^m${{< /math >}} is an affine image of {{< math >}}$B(O;1)${{< /math >}}. It can be represented as:
+An ellipsoid {{< math >}}$\mathcal{E}\subset\mathbb{R}^m${{< /math >}} is an affine image of {{< math >}}$\overline{B(O;1)}${{< /math >}}. It can be represented as:
 
 {{< math class=text-center >}}
 
@@ -129,7 +129,7 @@ $$
 
 {{< /math >}}
 
-where {{< math >}}$H${{< /math >}} is SPD (symmetric positive definite) (assuming it having positive volume), admitting a decomposition {{< math >}}$H=A^TA${{< /math >}}; such {{< math >}}$A${{< /math >}} then describes {{< math >}}$\mathcal{E}${{< /math >}} as {{< math >}}$c+AB(O;1)${{< /math >}}, hence an ellipsoid.
+where {{< math >}}$H${{< /math >}} is SPD (symmetric positive definite) (assuming it having positive volume), admitting a decomposition {{< math >}}$H=A^TA${{< /math >}}; such {{< math >}}$A${{< /math >}} then describes {{< math >}}$\mathcal{E}${{< /math >}} as {{< math >}}$c+A\overline{B(O;1)}${{< /math >}}, hence an ellipsoid.
 
 ### 2.2. "Ellipsoiding" Halved Ellipsoids
 
@@ -194,7 +194,7 @@ For {{< math >}}$m\geq 2${{< /math >}}, we get:
 $$
 \begin{cases}
 &\mathcal{E}(c_0,H_0)\cap E^-_{w,w^Tc_0}\subset \mathcal{E}(c,H)\\
-&\operatorname{vol}(\mathcal{E}(c,H))\leq e^{-1/2m}\operatorname{vol}(\mathcal{E}(c_0,H_0))
+&\operatorname{vol}(\mathcal{E}(c,H))\leq \exp(-(2m)^{-1})\operatorname{vol}(\mathcal{E}(c_0,H_0))
 \end{cases}
 $$
 

@@ -15,14 +15,22 @@ seo:
   noindex: false # false (default) or true
 ---
 
-> <sup>11</sup> You make known to me the path of life; you will fill me with joy in your presence, with eternal pleasures at your right hand. (Psalms 16:11; NIV)
+{{<callout context="caution" title="Psalms 16:11; NIV + CUVMPT" icon="outline/bible" >}}
+<sup>11</sup> You make known to me the path of life; you will fill me with joy in your presence, with eternal pleasures at your right hand.
 
-> <sup>11</sup> 你必將生命的道路指示我，在你面前有滿足的喜樂，在你右手中有永遠的福樂。（詩篇 16:11，和合本）
+<sup>11</sup> 你必將生命的道路指示我，在你面前有滿足的喜樂，在你右手中有永遠的福樂。
+{{</callout >}}
 
-As I was writing this page, I was constantly bothering myself with the following questions:
+## A Little Preface
 
-1. What was my goal?
-2. Who were my audiences?
-3. What would the content - a life of someone else - be of significance to some other person in the digital ocean named Internet?
+There are many times in our lives that we tried introducing ourselves to different people. Depending on the settings, introductions comes in different shapes and forms.
 
-For a curriculum vitae / resume, the audiences might be the recruiters, or some other job-seekers looking for templates and examples. In the former case, the goal is to reach a mutual agreement between both sides, exchanging skills, expertises with compensations. In the latter case.
+For example, there is a difference in formality; there is a difference in length; there is a difference in the medium used for delivering a self-introduction; there is a difference in goal; there is a difference in the audience (the numbers, their backgrounds/interests/purposes); there is a difference in whether it is scripted or not. It can be a description box with limited length for an account on social media, it can be a resume/CV, it can also just be a preliminary part of small talks in a social gathering.
+
+**All in all, no matter the settings, the content of an self-introduction is about "who am I", presented in a way that allows connections with others, or further opportunities to engage in subsequent interactions.**
+
+My technical skills, expertise, and passion for what I do professionally is the majority of the contents on this site. The contents on other nerdy hobbies of mine might also be things that might entertain people on the Internet.
+
+However, I would like to use the subsequent spaces to write about my _religion_, expressed through a reflection on my past life. It is titled "informal", as it is not something that people would immediately brought up in a formal conversation with strangers, but is something that was significant to me, and that I think would offer some perspectives that might inspire people.
+
+## A Lost Sheep
