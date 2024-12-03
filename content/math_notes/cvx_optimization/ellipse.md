@@ -5,6 +5,7 @@ summary: ""
 date: 2024-11-21T01:58:02-05:00
 lastmod: 2024-11-21T01:58:02-05:00
 draft: false
+weight: 210
 seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
@@ -16,7 +17,7 @@ In this article, I will give a brief guide on what the _ellipsoid method_ is. A 
 
 [^1]: Bubeck, Sébastien. _"Convex optimization: Algorithms and complexity."_ Foundations and Trends® in Machine Learning 8.3-4 (2015): 231-357.
 
-I will first give a high-level breakdown on why this algorithm works, then briefly write about how mathematically the ellipsoids are manipulated. Another optimization algorithm that is seldomly used in practice, but conceptually closely-related is the _center of gravity_ method. This will be explained in another article.
+I will first give a high-level breakdown on why this algorithm works, then briefly write about how mathematically the ellipsoids are manipulated. Another optimization algorithm that is seldomly used in practice, but conceptually closely-related is the _center of gravity_ method. This is explored [here](../cog).
 
 ## 1. Setting the Stage
 
@@ -94,7 +95,7 @@ It is now (finally 😅) the time to introduce the ellipsoid algorithm. The step
   {{< math class="text-center">}}$$\operatorname{vol}(\mathcal{E}_{t+1})\leq \exp(-1/2m)\operatorname{vol}(\mathcal{E}_{t})$${{< /math >}}
   and update:
   - {{< math >}}$c_{t+1}\to${{< /math >}} to be the new center of this ellipsoid.
-  - {{< math >}}$x_{t+1}\to${{< /math >}} the argmin of {{< math >}}$\{f(x_t),f(c_{t+1})\}${{< /math >}} if {{< math >}}$c_{t+1}\in\mathcal{X}${{< /math >}}; else continue.
+  - {{< math >}}$x_{t+1}\to${{< /math >}} the argmin of {{< math >}}$\{f(x_t),f(c_{t+1})\}${{< /math >}} if {{< math >}}$c_{t+1}\in\mathcal{X}${{< /math >}}; else set to {{< math >}}$x_t${{< /math >}}.
   - {{< math >}}$\mathcal{S}_{t+1}\to\mathcal{E}_{t+1}\cap \mathcal{X}${{< /math >}}.
   - {{< math >}}$t\to t+1${{< /math >}}.
 
@@ -107,7 +108,7 @@ For {{< math >}}$t\geq 2m^2\log(Rr^{-1})${{< /math >}}, we have {{< math >}}$x_t
 
 A bit of interpretation on this result, which would illustrate some cool characteristics of this algorithm:
 
-1. The _analytical complexity_ (that is, the number of calls to the oracles needed) to guarantee an accuracy to {{< math >}}$O(\varepsilon)${{< /math >}} is {{< math >}}$m^2\log(Rr^{-1}\varepsilon^{-1})${{< /math >}}, from a black-box optimization perspective.
+1. The _analytical complexity_ (that is, the number of calls to the oracles needed) to guarantee an accuracy to {{< math >}}$O(\varepsilon)${{< /math >}} is {{< math >}}$O(m^2\log(Rr^{-1}\varepsilon^{-1}))${{< /math >}}, from a black-box optimization perspective.
 2. In such sense, it is a _dimension-dependent_ algorithm - as dimension grows, the calls needed grows.
 3. As one can see later, the cost update are just some matrix-vector multiplications, as opposed to center-of-gravity which although have a better analytical complexity (of {{< math >}}$m\log(Rr^{-1}\varepsilon^{-1})${{< /math >}}), but each time step requires the computation of a nontrivial integral, in which in the most easy cases exact solvers still needs exponential computation time.
 

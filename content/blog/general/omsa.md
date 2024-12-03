@@ -1,13 +1,13 @@
 ---
 title: "OMSA Course Review"
 description: "Blog post on review of courses in OSMA"
-summary: ""
+summary: "Review of courses in OMSA."
 date: 2024-11-29T13:37:28-05:00
 lastmod: 2024-11-29T13:37:28-05:00
 draft: false
 weight: 50
-categories: []
-tags: []
+categories: ["omsa"]
+tags: ["review"]
 contributors: []
 pinned: false
 homepage: false
@@ -97,8 +97,6 @@ For what follows, DEW = Difficulty/Enjoyment/Workload ratings.
 `Sim` `ISYE6644`
 
 - **DEW**: 4/8/4
-- **Difficulty**: 3.5 out of 10.0
-- **Enjoyment**: 8.0 out of 10.0
 - **Format**:
   - HW: Weekly basis. Multiple choice questions on Canvas.
   - Exams: 3 exams. Allows cheat sheets.
