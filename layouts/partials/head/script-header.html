@@ -1,1 +1,34 @@
 <!-- Insert scripts NOT needed by stylesheets here -->
+<script>
+//custom key bindings
+const toggle_base = (key, func) => event =>
+    (event.ctrlKey && event.key === key) ? ( event.preventDefault(), func()) : null;
+const toggle_light_dark = toggle_base(
+    "|",
+    () => {
+        const htmlElement = document.documentElement; 
+        htmlElement.setAttribute(
+            'data-bs-theme',
+            htmlElement.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark'
+        );
+    }
+);
+const get_url = e => window.location.origin + (typeof e === "undefined" ? "" : "/" + e)
+const toggle_forward = toggle_base("}", () => history.forward());
+const toggle_backward = toggle_base("{", () => history.back());
+const toggle_top = toggle_base('"', () => window.scrollTo(0, 0));
+const toggle_bottom = toggle_base("?", () => window.scrollTo(0, document.body.scrollHeight));
+const toggle_home = toggle_base("<", () => window.open(get_url(), "_self"));
+const toggle_keyboards = toggle_base(">", () => window.open(get_url("keyboards"), "_self"));
+[
+  toggle_light_dark,
+  toggle_forward,
+  toggle_backward,
+  toggle_top,
+  toggle_bottom,
+  toggle_home,
+  toggle_keyboards,
+].forEach(
+  e => document.addEventListener('keydown', e)
+);
+</script>

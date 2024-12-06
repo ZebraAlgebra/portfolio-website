@@ -1,83 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>~Welcome~ on Samuel Wade Wang</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in ~Welcome~ on Samuel Wade Wang</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <copyright>Copyright (c) 2020-2024 Thulite</copyright>
-    <lastBuildDate>Tue, 03 Dec 2024 17:40:15 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>OMSA Course Review</title>
-      <link>http://localhost:1313/blog/omsa-course-review/</link>
-      <pubDate>Fri, 29 Nov 2024 13:37:28 -0500</pubDate>
-      <guid>http://localhost:1313/blog/omsa-course-review/</guid>
-      <description>Review of courses in OMSA.</description>
-    </item>
-    <item>
-      <title>Hello Personal Page!</title>
-      <link>http://localhost:1313/blog/hello-personal-page/</link>
-      <pubDate>Mon, 18 Nov 2024 23:03:20 +0200</pubDate>
-      <guid>http://localhost:1313/blog/hello-personal-page/</guid>
-      <description>First post on Hugo Blog!</description>
-    </item>
-    <item>
-      <title>The Last Book Bender</title>
-      <link>http://localhost:1313/about/projects/bookbend/</link>
-      <pubDate>Tue, 03 Dec 2024 17:40:15 -0500</pubDate>
-      <guid>http://localhost:1313/about/projects/bookbend/</guid>
-      <description>&lt;p&gt;&lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;24&#34;&#xA;  height=&#34;24&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA; &#xA; class=&#34;outline/brand-github svg-inline&#34; id=&#34;svg-brand-github&#34; role=&#34;img&#34;&gt;&#xA;  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&#xA;  &lt;path d=&#34;M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5&#34; /&gt;&#xA;&lt;/svg&gt; &lt;a href=&#34;https://github.com/Book-Bender/The-Last-Book-Bender&#34;&gt;Github Link&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Convex Analysis</title>
-      <link>http://localhost:1313/math_notes/cvx_analysis/</link>
-      <pubDate>Thu, 21 Nov 2024 01:58:02 -0500</pubDate>
-      <guid>http://localhost:1313/math_notes/cvx_analysis/</guid>
-      <description>&lt;p&gt;I wrote a note on the subject of convex analysis, following Bertsekas&amp;rsquo; book. &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; Here are the &lt;a href=&#34;https://github.com/ZebraAlgebra/convex-analysis-notes&#34;&gt;Github link&lt;/a&gt; (hosting LaTeX files) and the &lt;a href=&#34;https://drive.google.com/drive/folders/1LIo2TSpO3cyZ70t-df9wH7gtsHoRbBNA&#34;&gt;Google drive link&lt;/a&gt; (hosting latest PDF).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>CV/Resume</title>
-      <link>http://localhost:1313/about/resume/</link>
-      <pubDate>Wed, 20 Nov 2024 17:49:31 -0500</pubDate>
-      <guid>http://localhost:1313/about/resume/</guid>
-      <description>My curriculum vitae and resume.</description>
-    </item>
-    <item>
-      <title>Ellipsoid Method</title>
-      <link>http://localhost:1313/math_notes/cvx_optimization/ellipse/</link>
-      <pubDate>Thu, 21 Nov 2024 01:58:02 -0500</pubDate>
-      <guid>http://localhost:1313/math_notes/cvx_optimization/ellipse/</guid>
-      <description>&lt;p&gt;In this article, I will give a brief guide on what the &lt;em&gt;ellipsoid method&lt;/em&gt; is. A good reference would be the note by Sébastien Bubeck &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Center of Gravity Method</title>
-      <link>http://localhost:1313/math_notes/cvx_optimization/cog/</link>
-      <pubDate>Thu, 28 Nov 2024 12:37:23 -0500</pubDate>
-      <guid>http://localhost:1313/math_notes/cvx_optimization/cog/</guid>
-      <description>&lt;p&gt;In this article, I will give a brief guide on what the &lt;em&gt;center of gravity method&lt;/em&gt; (COG) is. Again, a good reference would be the note by Sébastien Bubeck&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Informal Self-Introduction</title>
-      <link>http://localhost:1313/about/informal/</link>
-      <pubDate>Wed, 20 Nov 2024 19:56:15 -0500</pubDate>
-      <guid>http://localhost:1313/about/informal/</guid>
-      <description>&lt;div class=&#34;callout callout-caution d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3&#34;&gt;&#xD;&#xA;  &lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;24&#34;&#xA;  height=&#34;24&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA; &#xA; class=&#34;outline/bible svg-inline callout-icon me-2 mb-3&#34; id=&#34;svg-bible&#34; role=&#34;img&#34;&gt;&#xA;  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&#xA;  &lt;path d=&#34;M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12z&#34; /&gt;&#xA;  &lt;path d=&#34;M19 16h-12a2 2 0 0 0 -2 2&#34; /&gt;&#xA;  &lt;path d=&#34;M12 7v6&#34; /&gt;&#xA;  &lt;path d=&#34;M10 9h4&#34; /&gt;&#xA;&lt;/svg&gt;&#xD;&#xA;  &lt;div class=&#34;callout-content&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;callout-title&#34;&gt;&#xD;&#xA;        &lt;p&gt;Psalms 16:11; NIV + CUVMPT&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Example Guide</title>
-      <link>http://localhost:1313/docs_/guides/example/</link>
-      <pubDate>Thu, 07 Sep 2023 16:04:48 +0200</pubDate>
-      <guid>http://localhost:1313/docs_/guides/example/</guid>
-      <description>&lt;p&gt;Guides lead a user through a specific task they want to accomplish, often with a sequence of steps. Writing a good guide requires thinking about what your users are trying to do.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Example Reference</title>
-      <link>http://localhost:1313/docs_/reference/example/</link>
-      <pubDate>Thu, 07 Sep 2023 16:13:18 +0200</pubDate>
-      <guid>http://localhost:1313/docs_/reference/example/</guid>
-      <description>&lt;p&gt;Reference pages are ideal for outlining how things work in terse and clear terms. Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what your documenting.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>~Welcome~ on Samuel Wade Wang</title><link>/</link><description>Recent content in ~Welcome~ on Samuel Wade Wang</description><generator>Hugo</generator><language>en</language><copyright>Copyright (c) 2020-2024 Thulite</copyright><lastBuildDate>Tue, 03 Dec 2024 17:40:15 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>OMSA Course Review</title><link>/blog/omsa-course-review/</link><pubDate>Fri, 29 Nov 2024 13:37:28 -0500</pubDate><guid>/blog/omsa-course-review/</guid><description>Review of courses in OMSA.</description></item><item><title>Hello Personal Page!</title><link>/blog/hello-personal-page/</link><pubDate>Mon, 18 Nov 2024 23:03:20 +0200</pubDate><guid>/blog/hello-personal-page/</guid><description>First post on Hugo Blog!</description></item><item><title>The Last Book Bender</title><link>/about/projects/bookbend/</link><pubDate>Tue, 03 Dec 2024 17:40:15 -0500</pubDate><guid>/about/projects/bookbend/</guid><description>&lt;p>&lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="24"
+ height="24"
+ viewBox="0 0 24 24"
+ fill="none"
+ stroke="currentColor"
+ stroke-width="2"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ 
+ class="outline/brand-github svg-inline" id="svg-brand-github" role="img">
+ &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+ &lt;path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+&lt;/svg> &lt;a href="https://github.com/Book-Bender/The-Last-Book-Bender">Github Link&lt;/a>&lt;/p></description></item><item><title>Convex Analysis</title><link>/math_notes/cvx_analysis/</link><pubDate>Thu, 21 Nov 2024 01:58:02 -0500</pubDate><guid>/math_notes/cvx_analysis/</guid><description>&lt;p>I wrote a note on the subject of convex analysis, following Bertsekas&amp;rsquo; book. &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> Here are the &lt;a href="https://github.com/ZebraAlgebra/convex-analysis-notes">Github link&lt;/a> (hosting LaTeX files) and the &lt;a href="https://drive.google.com/drive/folders/1LIo2TSpO3cyZ70t-df9wH7gtsHoRbBNA">Google drive link&lt;/a> (hosting latest PDF).&lt;/p></description></item><item><title>CV/Resume</title><link>/about/resume/</link><pubDate>Wed, 20 Nov 2024 17:49:31 -0500</pubDate><guid>/about/resume/</guid><description>My curriculum vitae and resume.</description></item><item><title>Ellipsoid Method</title><link>/math_notes/cvx_optimization/ellipse/</link><pubDate>Thu, 21 Nov 2024 01:58:02 -0500</pubDate><guid>/math_notes/cvx_optimization/ellipse/</guid><description>&lt;p>In this article, I will give a brief guide on what the &lt;em>ellipsoid method&lt;/em> is. A good reference would be the note by Sébastien Bubeck &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>.&lt;/p></description></item><item><title>Center of Gravity Method</title><link>/math_notes/cvx_optimization/cog/</link><pubDate>Thu, 28 Nov 2024 12:37:23 -0500</pubDate><guid>/math_notes/cvx_optimization/cog/</guid><description>&lt;p>In this article, I will give a brief guide on what the &lt;em>center of gravity method&lt;/em> (COG) is. Again, a good reference would be the note by Sébastien Bubeck&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>.&lt;/p></description></item><item><title>Informal Self-Introduction</title><link>/about/informal/</link><pubDate>Wed, 20 Nov 2024 19:56:15 -0500</pubDate><guid>/about/informal/</guid><description>&lt;div class="callout callout-caution d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="24"
+ height="24"
+ viewBox="0 0 24 24"
+ fill="none"
+ stroke="currentColor"
+ stroke-width="2"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ 
+ class="outline/bible svg-inline callout-icon me-2 mb-3" id="svg-bible" role="img">
+ &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+ &lt;path d="M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12z" />
+ &lt;path d="M19 16h-12a2 2 0 0 0 -2 2" />
+ &lt;path d="M12 7v6" />
+ &lt;path d="M10 9h4" />
+&lt;/svg>
+ &lt;div class="callout-content">
+ &lt;div class="callout-title">
+ &lt;p>Psalms 16:11; NIV + CUVMPT&lt;/p></description></item><item><title>Example Guide</title><link>/docs_/guides/example/</link><pubDate>Thu, 07 Sep 2023 16:04:48 +0200</pubDate><guid>/docs_/guides/example/</guid><description>&lt;p>Guides lead a user through a specific task they want to accomplish, often with a sequence of steps. Writing a good guide requires thinking about what your users are trying to do.&lt;/p></description></item><item><title>Example Reference</title><link>/docs_/reference/example/</link><pubDate>Thu, 07 Sep 2023 16:13:18 +0200</pubDate><guid>/docs_/reference/example/</guid><description>&lt;p>Reference pages are ideal for outlining how things work in terse and clear terms. Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what your documenting.&lt;/p></description></item></channel></rss>

@@ -1,41 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Projects @gatech on Samuel Wade Wang</title>
-    <link>http://localhost:1313/about/projects/</link>
-    <description>Recent content in Projects @gatech on Samuel Wade Wang</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <copyright>Copyright (c) 2020-2024 Thulite</copyright>
-    <lastBuildDate>Wed, 04 Dec 2024 17:40:15 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/about/projects/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Last Book Bender</title>
-      <link>http://localhost:1313/about/projects/bookbend/</link>
-      <pubDate>Tue, 03 Dec 2024 17:40:15 -0500</pubDate>
-      <guid>http://localhost:1313/about/projects/bookbend/</guid>
-      <description>&lt;p&gt;&lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;24&#34;&#xA;  height=&#34;24&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA; &#xA; class=&#34;outline/brand-github svg-inline&#34; id=&#34;svg-brand-github&#34; role=&#34;img&#34;&gt;&#xA;  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&#xA;  &lt;path d=&#34;M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5&#34; /&gt;&#xA;&lt;/svg&gt; &lt;a href=&#34;https://github.com/Book-Bender/The-Last-Book-Bender&#34;&gt;Github Link&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>🏗️ Applied Analytics Practicum</title>
-      <link>http://localhost:1313/about/projects/prac/</link>
-      <pubDate>Mon, 02 Dec 2024 17:40:15 -0500</pubDate>
-      <guid>http://localhost:1313/about/projects/prac/</guid>
-      <description>&lt;p&gt;&lt;code&gt;2024/09-2024/12&lt;/code&gt; &lt;code&gt;Python&lt;/code&gt; &lt;code&gt;PowerBI&lt;/code&gt; &lt;code&gt;Time Series Analysis&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;basic-info&#34;&gt;Basic Info&lt;/h2&gt;&#xA;&lt;p&gt;This was the final practicum project that I did in the OMSA program.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>🏗️ Scaling CF via CBF and Data Injection</title>
-      <link>http://localhost:1313/about/projects/cfcbf/</link>
-      <pubDate>Wed, 04 Dec 2024 17:40:15 -0500</pubDate>
-      <guid>http://localhost:1313/about/projects/cfcbf/</guid>
-      <description>&lt;p&gt;&lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;24&#34;&#xA;  height=&#34;24&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA; &#xA; class=&#34;outline/leaf svg-inline&#34; id=&#34;svg-leaf&#34; role=&#34;img&#34;&gt;&#xA;  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&#xA;  &lt;path d=&#34;M5 21c.5 -4.5 2.5 -8 7 -10&#34; /&gt;&#xA;  &lt;path d=&#34;M9 18c6.218 0 10.5 -3.288 11 -12v-2h-4.014c-9 0 -11.986 4 -12 9c0 1 0 3 2 5h3z&#34; /&gt;&#xA;&lt;/svg&gt; &lt;a href=&#34;https://www.overleaf.com/read/wkxrbpykdpwk#e265a8&#34;&gt;Overleaf Link&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>🏗️ flusim</title>
-      <link>http://localhost:1313/about/projects/flusim/</link>
-      <pubDate>Sun, 01 Dec 2024 17:40:15 -0500</pubDate>
-      <guid>http://localhost:1313/about/projects/flusim/</guid>
-      <description>&lt;p&gt;&lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;24&#34;&#xA;  height=&#34;24&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA; &#xA; class=&#34;outline/brand-github svg-inline&#34; id=&#34;svg-brand-github&#34; role=&#34;img&#34;&gt;&#xA;  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&#xA;  &lt;path d=&#34;M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5&#34; /&gt;&#xA;&lt;/svg&gt; &lt;a href=&#34;https://github.com/ZebraAlgebra/flusim&#34;&gt;Github Link&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects @gatech on Samuel Wade Wang</title><link>/about/projects/</link><description>Recent content in Projects @gatech on Samuel Wade Wang</description><generator>Hugo</generator><language>en</language><copyright>Copyright (c) 2020-2024 Thulite</copyright><lastBuildDate>Wed, 04 Dec 2024 17:40:15 -0500</lastBuildDate><atom:link href="/about/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>The Last Book Bender</title><link>/about/projects/bookbend/</link><pubDate>Tue, 03 Dec 2024 17:40:15 -0500</pubDate><guid>/about/projects/bookbend/</guid><description>&lt;p>&lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="24"
+ height="24"
+ viewBox="0 0 24 24"
+ fill="none"
+ stroke="currentColor"
+ stroke-width="2"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ 
+ class="outline/brand-github svg-inline" id="svg-brand-github" role="img">
+ &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+ &lt;path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+&lt;/svg> &lt;a href="https://github.com/Book-Bender/The-Last-Book-Bender">Github Link&lt;/a>&lt;/p></description></item><item><title>🏗️ Applied Analytics Practicum</title><link>/about/projects/prac/</link><pubDate>Mon, 02 Dec 2024 17:40:15 -0500</pubDate><guid>/about/projects/prac/</guid><description>&lt;p>&lt;code>2024/09-2024/12&lt;/code> &lt;code>Python&lt;/code> &lt;code>PowerBI&lt;/code> &lt;code>Time Series Analysis&lt;/code>&lt;/p>
+&lt;h2 id="basic-info">Basic Info&lt;/h2>
+&lt;p>This was the final practicum project that I did in the OMSA program.&lt;/p></description></item><item><title>🏗️ Scaling CF via CBF and Data Injection</title><link>/about/projects/cfcbf/</link><pubDate>Wed, 04 Dec 2024 17:40:15 -0500</pubDate><guid>/about/projects/cfcbf/</guid><description>&lt;p>&lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="24"
+ height="24"
+ viewBox="0 0 24 24"
+ fill="none"
+ stroke="currentColor"
+ stroke-width="2"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ 
+ class="outline/leaf svg-inline" id="svg-leaf" role="img">
+ &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+ &lt;path d="M5 21c.5 -4.5 2.5 -8 7 -10" />
+ &lt;path d="M9 18c6.218 0 10.5 -3.288 11 -12v-2h-4.014c-9 0 -11.986 4 -12 9c0 1 0 3 2 5h3z" />
+&lt;/svg> &lt;a href="https://www.overleaf.com/read/wkxrbpykdpwk#e265a8">Overleaf Link&lt;/a>&lt;/p></description></item><item><title>🏗️ flusim</title><link>/about/projects/flusim/</link><pubDate>Sun, 01 Dec 2024 17:40:15 -0500</pubDate><guid>/about/projects/flusim/</guid><description>&lt;p>&lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="24"
+ height="24"
+ viewBox="0 0 24 24"
+ fill="none"
+ stroke="currentColor"
+ stroke-width="2"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ 
+ class="outline/brand-github svg-inline" id="svg-brand-github" role="img">
+ &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+ &lt;path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+&lt;/svg> &lt;a href="https://github.com/ZebraAlgebra/flusim">Github Link&lt;/a>&lt;/p></description></item></channel></rss>
