@@ -48,4 +48,5 @@
     max-age=31536000'''
 
 [[plugins]]
-  package = "@netlify/plugin-csp-nonce"   Access-Control-Allow-Origin = "*"
+  package = "@netlify/plugin-csp-nonce"
+  Access-Control-Allow-Origin = "*"
