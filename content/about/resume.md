@@ -29,15 +29,17 @@ A PDF version can be found [here](https://drive.google.com/drive/folders/1fhbh23
 
 ## Education
 
-| Start     | End       | School                      | Degree            | Location              |
-| :-------- | :-------- | :-------------------------- | :---------------- | :-------------------- |
-| `2016/08` | `2020/05` | National Taiwan University  | B.S. in Math      | `Taipei, Taiwan`      |
-| `2022/02` | `2023/05` | National Taiwan University  | M.S. in Math      | `Taipei, Taiwan`      |
-| `2023/08` | `2024/12` | Georgia Inst. of Technology | M.S. in Analytics | `Atlanta, GA, U.S.A.` |
+| Start     | End       | School | Degree       | Location       |
+| :-------- | :-------- | :----- | :----------- | :------------- |
+| `2016/08` | `2020/05` | NTU    | BS Math      | `TPE, TW`      |
+| `2022/02` | `2023/05` | NTU    | MS Math      | `TPE, TW`      |
+| `2023/08` | `2024/12` | GT     | MS Analytics | `ATL, GA, USA` |
+
+\*(NTU, GT) = (National Taiwan University, Georgia Institute of Technology)
 
 ## Technical Skills
 
-- **Programming Languages / Tools** : {{< inline-svg "outline/brand-python" >}}, R, {{< inline-svg "outline/file-type-html" >}} / {{< inline-svg "outline/file-type-css" >}} / {{< inline-svg "outline/file-type-js" >}} + {{< inline-svg "outline/brand-react" >}}, {{< inline-svg "outline/brand-git" >}}, {{< inline-svg "outline/tex" >}}, {{< inline-svg "outline/sql" >}}
+- **Programming Lang. / Tools** : {{< inline-svg "outline/brand-python" >}}, R, {{< inline-svg "outline/file-type-html" >}} / {{< inline-svg "outline/file-type-css" >}} / {{< inline-svg "outline/file-type-js" >}} + {{< inline-svg "outline/brand-react" >}}, {{< inline-svg "outline/brand-git" >}}, {{< inline-svg "outline/tex" >}}, {{< inline-svg "outline/sql" >}}
 - **Analytics Tools**:
   - **EDA and Data Preparation**: Pandas, Polars, Dask, (Py)Spark
   - **Visualization**: Matplotlib, D3.js
@@ -51,13 +53,13 @@ A PDF version can be found [here](https://drive.google.com/drive/folders/1fhbh23
 
 This page provides an overview. A more detailed description is given in [this page](/about/projects/).
 
-- **OMSA Practicum (C-Track)** `2024/09-2024/12` `Python` `PowerBI` `Time Series Analysis` `Functional Data Analysis`
+- [**OMSA Practicum (C-Track)**](/about/projects/prac) `2024/09-2024/12` `Python` `PowerBI` `Time Series Analysis`
   - A practicum project sponsered by [MedTrans Go](https://www.medtransgo.com/), an end-to-end data analytics tasks, aiming to quantify and analyze tech updates on sales, as well as identifying other underlying patterns of requests
-- **The Last Book Bender** `2024/01-04/2024` `Python` `BERT` `Recommendation Systems` `ReactJS` `Flask`
+- [**The Last Book Bender**](/about/projects/bookbend) `2024/01-04/2024` `Python` `BERT` `Recommendation Systems` `ReactJS` `Flask`
   - A book recommender and visualization web app, built on Goodreads10k and books from project Gutenberg
-- **Scaling CF via CBF and Data Injection** `2024/01-04/2024` `Python` `Recommendation systems` `LaTeX`
+- [**Scaling CF via CBF and Data Injection**](/about/projects/cfcbf) `2024/01-04/2024` `Python` `Recommendation systems` `LaTeX`
   - A project exploring ways to scale the traditional user-based collaborative filtering (UBCF) to larger datasets, via content-based (CBF) approaches - users subsampling and item clustering
-- **flusim** `2023/09-2023/12` `Python` `Simulation` `Markov Processes` `LaTeX`
+- [**flusim**](/about/projects/flusim) `2023/09-2023/12` `Python` `Simulation` `Markov Processes` `LaTeX`
   - A Python package published on TestPyPI, for simulation, calculation of statistics, visualizations of a particular theoretical flu-spread process
 
 ## Working Experience

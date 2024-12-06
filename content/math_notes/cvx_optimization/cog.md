@@ -62,11 +62,14 @@ Some remarks:
 
 ## 2. Math of COG
 
-{{< inline-svg "outline/barrier-block" >}} Under Construction!
+The heart of the COG method lies within _Brunn-Minkowski's inequality_ and _Grünbaum's inequality_. The latter inequality ensures that the peel we gain control of in each step of the COG method is large enough, while the first is an inequality relating two convex sets with their convex combination.
 
-**Goal**. Prove Grünbaum's inequality
+We introduce the following notations:
 
-**Tentative outline**.
-
-- 2.1. Brunn-Minkowski inequality
-- 2.2. Grünbaum inequality
+- Given {{< math >}}$X,Y\subset\mathbb{R}^m${{< /math >}} and {{< math >}}$Z\subset\mathbb{R}${{< /math >}}, we write:
+  {{< math class="text-center">}}$$I(X,Y;Z)=\{(1-z)x+zy:(x,y,z)\in X\times Y\times Z\}$${{< /math >}}
+  which is just a dirty notation for constructing cones, convex combinations. Some times we do not distinguish between elements and one-point sets.
+- We write {{< math >}}$\nu_m:=\operatorname{vol}(B(O_m;1))${{< /math >}}, the volume of the unit ball (in {{< math >}}$\mathbb{R}^m${{< /math >}})
+- Given a measurable subset {{< math >}}$X\subset\mathbb{R}^m${{< /math >}}, we write {{< math >}}$\rho_m(X):=\sqrt[m]{\operatorname{vol}(X)/\nu_m}${{< /math >}}, which satisfies:
+  {{< math class="text-center">}}$$\operatorname{vol}(B(O_m;\rho_m(X)))=\operatorname{vol}(X)$${{< /math >}}
+- Given {{< math >}}$X\subset\mathbb{R}^m${{< /math >}} with {{< math >}}$m\geq 2${{< /math >}}, we define {{< math >}}$X_{-}${{< /math >}} as the set {{< math>}}$X_{\pm}=X\cap E_{e_1,0}^{\pm}${{< /math >}} where {{< math >}}$E^\pm_{v,u}${{< /math >}} is the set of elements that has inner product with {{< math >}}$v${{< /math >}} a value {{< math >}}$\leq u${{< /math >}}.

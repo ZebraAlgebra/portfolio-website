@@ -2,8 +2,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
-      <loc>http://localhost:1313/about/projects/projects/</loc>
-      <lastmod>2024-11-20T17:56:15-05:00</lastmod>
+      <loc>http://localhost:1313/about/projects/bookbend/</loc>
+      <lastmod>2024-12-03T17:40:15-05:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    
+    <url>
+      <loc>http://localhost:1313/about/projects/prac/</loc>
+      <lastmod>2024-12-02T17:40:15-05:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    
+    <url>
+      <loc>http://localhost:1313/about/projects/cfcbf/</loc>
+      <lastmod>2024-12-04T17:40:15-05:00</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    
+    <url>
+      <loc>http://localhost:1313/about/projects/flusim/</loc>
+      <lastmod>2024-12-01T17:40:15-05:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>

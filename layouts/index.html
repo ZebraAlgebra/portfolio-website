@@ -5,11 +5,11 @@
       <h1>{{ .Title }}</h1>
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
-      <p class="lead my-3">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="/about/" role="button">About Me</a>
-      <a class="btn btn-info btn-cta rounded-pill btn-lg my-3" href="/blog/" role="button">Blog</a>
-      <a class="btn btn-danger btn-cta rounded-pill btn-lg my-3" href="/math_notes/" role="button">Math Notes</a>
-      <div class="text-secondary">
+      <p class="lead my-2">{{ .Params.lead | safeHTML }}</p>
+      <a class="btn btn-primary btn-cta rounded-pill btn-md my-1" href="/about/" role="button">About Me</a>
+      <a class="btn btn-info btn-cta rounded-pill btn-md my-1" href="/blog/" role="button">Blog</a>
+      <a class="btn btn-danger btn-cta rounded-pill btn-md my-1" href="/math_notes/" role="button">Math Notes</a>
+      <div class="text-body-tertiary">
         (Last updated: {{ .Lastmod | time.Format ":date_short" }} {{ .Lastmod | time.Format ":time_full" }} EST)
       </div>
       <div class="my-3">
@@ -50,6 +50,9 @@
           <h2 class="h4">Optimization</h2>
           <p>Coming up with ways of min(max)imizing objectives of interest with respect to given constraints.</p>
         </div>
+      </div>
+      <div class="text-body-tertiary text-center mt-3">
+        📢 Note: This site is undergoing frequent updates. For the most recent updates to be visible, manual refreshes might be needed.
       </div>
     </div>
   </section>

@@ -15,4 +15,4 @@ seo:
   noindex: false # false (default) or true
 ---
 
-{{< inline-svg "outline/barrier-block" >}} Under Construction!
+The following are selected projects that I have worked on during my time in the OMSA program at Georgia Tech:
