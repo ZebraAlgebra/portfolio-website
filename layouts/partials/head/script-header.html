@@ -7,10 +7,12 @@ const toggle_light_dark = toggle_base(
     "|",
     () => {
         const htmlElement = document.documentElement; 
+        const currentTheme = htmlElement.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark'
         htmlElement.setAttribute(
             'data-bs-theme',
-            htmlElement.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark'
+            currentTheme
         );
+        localStorage.setItem("theme", currentTheme);
     }
 );
 const get_url = e => window.location.origin + (typeof e === "undefined" ? "" : "/" + e)
