@@ -12,7 +12,34 @@
  class="outline/brand-github svg-inline" id="svg-brand-github" role="img">
  &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
  &lt;path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-&lt;/svg> &lt;a href="https://github.com/Book-Bender/The-Last-Book-Bender">Github Link&lt;/a>&lt;/p></description></item><item><title>Convex Analysis</title><link>/math_notes/cvx_analysis/</link><pubDate>Thu, 21 Nov 2024 01:58:02 -0500</pubDate><guid>/math_notes/cvx_analysis/</guid><description>&lt;p>I wrote a note on the subject of convex analysis, following Bertsekas&amp;rsquo; book. &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> Here are the &lt;a href="https://github.com/ZebraAlgebra/convex-analysis-notes">Github link&lt;/a> (hosting LaTeX files) and the &lt;a href="https://drive.google.com/drive/folders/1LIo2TSpO3cyZ70t-df9wH7gtsHoRbBNA">Google drive link&lt;/a> (hosting latest PDF).&lt;/p></description></item><item><title>CV/Resume</title><link>/about/resume/</link><pubDate>Wed, 20 Nov 2024 17:49:31 -0500</pubDate><guid>/about/resume/</guid><description>My curriculum vitae and resume.</description></item><item><title>Ellipsoid Method</title><link>/math_notes/cvx_optimization/ellipse/</link><pubDate>Thu, 21 Nov 2024 01:58:02 -0500</pubDate><guid>/math_notes/cvx_optimization/ellipse/</guid><description>&lt;p>In this article, I will give a brief guide on what the &lt;em>ellipsoid method&lt;/em> is. A good reference would be the note by Sébastien Bubeck &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>.&lt;/p></description></item><item><title>Center of Gravity Method</title><link>/math_notes/cvx_optimization/cog/</link><pubDate>Thu, 28 Nov 2024 12:37:23 -0500</pubDate><guid>/math_notes/cvx_optimization/cog/</guid><description>&lt;p>In this article, I will give a brief guide on what the &lt;em>center of gravity method&lt;/em> (COG) is. Again, a good reference would be the note by Sébastien Bubeck&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>.&lt;/p></description></item><item><title>Informal Self-Introduction</title><link>/about/informal/</link><pubDate>Wed, 20 Nov 2024 19:56:15 -0500</pubDate><guid>/about/informal/</guid><description>&lt;div class="callout callout-caution d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+&lt;/svg> &lt;a href="https://github.com/Book-Bender/The-Last-Book-Bender">Github Link&lt;/a>&lt;/p></description></item><item><title>Convex Analysis</title><link>/math_notes/cvx_analysis/</link><pubDate>Thu, 21 Nov 2024 01:58:02 -0500</pubDate><guid>/math_notes/cvx_analysis/</guid><description>&lt;p>I wrote a note on the subject of convex analysis, following Bertsekas&amp;rsquo; book. &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> Here are the &lt;a href="https://github.com/ZebraAlgebra/convex-analysis-notes">Github link&lt;/a> (hosting LaTeX files) and the &lt;a href="https://drive.google.com/drive/folders/1LIo2TSpO3cyZ70t-df9wH7gtsHoRbBNA">Google drive link&lt;/a> (hosting latest PDF).&lt;/p></description></item><item><title>CV/Resume</title><link>/about/resume/</link><pubDate>Wed, 20 Nov 2024 17:49:31 -0500</pubDate><guid>/about/resume/</guid><description>My curriculum vitae and resume.</description></item><item><title>Ellipsoid Method</title><link>/math_notes/cvx_optimization/ellipse/</link><pubDate>Thu, 21 Nov 2024 01:58:02 -0500</pubDate><guid>/math_notes/cvx_optimization/ellipse/</guid><description>&lt;p>In this article, I will give a brief guide on what the &lt;em>ellipsoid method&lt;/em> is. A good reference would be the note by Sébastien Bubeck &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>.&lt;/p></description></item><item><title>Center of Gravity Method</title><link>/math_notes/cvx_optimization/cog/</link><pubDate>Thu, 28 Nov 2024 12:37:23 -0500</pubDate><guid>/math_notes/cvx_optimization/cog/</guid><description>&lt;div class="callout callout-danger d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+ &lt;svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="24"
+ height="24"
+ viewBox="0 0 24 24"
+ fill="none"
+ stroke="currentColor"
+ stroke-width="2"
+ stroke-linecap="round"
+ stroke-linejoin="round"
+ 
+ class="outline/barrier-block svg-inline callout-icon me-2 mb-3" id="svg-barrier-block" role="img">
+ &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+ &lt;path d="M4 7m0 1a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v7a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1z" />
+ &lt;path d="M7 16v4" />
+ &lt;path d="M7.5 16l9 -9" />
+ &lt;path d="M13.5 16l6.5 -6.5" />
+ &lt;path d="M4 13.5l6.5 -6.5" />
+ &lt;path d="M17 16v4" />
+ &lt;path d="M5 20h4" />
+ &lt;path d="M15 20h4" />
+ &lt;path d="M17 7v-2" />
+ &lt;path d="M7 7v-2" />
+&lt;/svg>
+ &lt;div class="callout-content">
+ &lt;div class="callout-title">
+ &lt;p>Todo Items&lt;/p></description></item><item><title>Informal Self-Introduction</title><link>/about/informal/</link><pubDate>Wed, 20 Nov 2024 19:56:15 -0500</pubDate><guid>/about/informal/</guid><description>&lt;div class="callout callout-caution d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
  &lt;svg
  xmlns="http://www.w3.org/2000/svg"
  width="24"
