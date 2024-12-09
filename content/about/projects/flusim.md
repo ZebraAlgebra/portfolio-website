@@ -23,7 +23,7 @@ This was a project that I worked on in the class Simulation (ISYE-6644) at Georg
 
 ### The Idea
 
-The project idea was one of those given in a proposed project topics in this course. Roughly speaking, the original problem were as follows:
+The project idea was one of those given in a proposed project topics in this course. Roughly speaking, the original topic has the following settings and the corresponding questions posed:
 
 {{< callout context="note" title="Settings" icon="outline/marquee-2" >}}
 Consider a population of size 31, and a flu going on in this population. The flu has some properties:
@@ -34,7 +34,7 @@ Consider a population of size 31, and a flu going on in this population. The flu
 {{< /callout >}}
 
 {{< callout context="caution" title="Problem" icon="outline/help-hexagon" >}}
-1. Distribution and expected number of number of people infected at day 1, 2
+1. Calculate the distribution and expected number of number of people infected at day 1, 2
 2. Simulate and find an approximation of the distribution of end-date of flu
 {{< /callout >}}
 
@@ -48,7 +48,7 @@ My idea was then to write a Python class (and eventually it became a Python pack
 
 I first formulated a more general version of this problem (where population size, infecting probabilities can be tweaked) mathematically, and designed pseudocodes for exact solvers, simulations for statistics (such as {distributions / expectations / variance} of {number of infected people / end dates}).
 
-The related theory I used for designing the exact solver was that of Markov chain[^1], where some of the statistics can be done via such general methods - for example, expectations, variance of end dates are analyzed via **First step analysis** techniques. 
+The related theory I used for designing the exact solver was that of Markov chain[^1], where some of the statistics can be done via such general methods - for example, expectations, variance of end dates are analyzed via *first step analysis* techniques. 
 
 [^1]: This was a fun problem to work with from a mathematical viewpoint, but it was later that I learned that such model is a type of [**SI model**](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology) (without the "R").
 
@@ -66,7 +66,7 @@ Fragments of final report (page 1, 5, 8, 11)
 
 ## Final Thoughts
 
-It was pretty cool seeing the things I derived with the theory of Markov chains matching the simulation results.
+It was pretty cool seeing the things I derived with the theory of Markov chains matching the simulation results, a type of "mathematical joy" I would say.
 
 {{< card-grid >}}
 {{< link-card title="Back to Projects Page" href="/about/projects/" >}}

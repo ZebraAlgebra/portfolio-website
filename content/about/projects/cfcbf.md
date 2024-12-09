@@ -71,13 +71,11 @@ My contributions are summarized in the following table:
 
 ### Results
 
-We were able to reach a best 10-fold cross-validated MAE/RMSE around **0.95**, **1.37** (where the ratings are on a scale from 1 to 10). Details are given in our report.
+We were able to reach a best 10-fold cross-validated MAE/RMSE around **0.95**, **1.37** (where the ratings are on a scale from 1 to 10), but with reduced memory usage and increasd speed in terms of predictions. Details are given in our report.
 
 ## Final Thoughts
 
-Although CF, CBF are some of the most basic (and perhaps outdated) recommender algorithms, I still feel like it has some potentials when coupled with other data modeling techniques.
-
-I personally found the dimensionality reduction techniques in our project to be pretty unique,
+Although CF, CBF are some of the most basic recommender algorithms, I am still pretty happy about this project 🤗 - it has some little quirky uncommon data modeling ideas, and worked pretty fine!
 
 {{< card-grid >}}
 {{< link-card title="Back to Projects Page" href="/about/projects/" >}}

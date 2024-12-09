@@ -67,12 +67,12 @@ I thought the idea of project was pretty cool, but I will talk about some improv
 
 ## Final Thoughts
 
-This is my first time trying to build an end-to-end pseudo-complete data product with a team. This might be a weird of saying this, but during my days in the OMSA program, I was always suprised and happy to see when datas come to life.
-
 I learned a lot from this project:
 1. I used to have some "have watched some Udemy React course" React skill, and vague experience with other frontend development stuffs, but this project really pushed me to put these into works.
 2. This is my first time reading Flask backend codes, connecting frontend apps to it, as well as designing some additional endpoints. I used to have a vague idea on how maybe Python can be used to do such things, but working with teammates that have backend skills enabled me to see how this *actually works*.
 3. This is my first time learning about the BERT model. I made up my mind at that time to learn about this tool and possibly use it in the future when encountering analytics tasks involving NLP components.
+
+Most importantly, this is my first time trying to build an end-to-end pseudo-complete data product with a team. It might be a weird to say this, but I always find it exciting and happy to see when datas "doing things". 
 
 {{< card-grid >}}
 {{< link-card title="Back to Projects Page" href="/about/projects/" >}}
