@@ -1,4 +1,4 @@
-<!doctype html><html lang=en data-bs-theme=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=preload href=/fonts/vendor/jost/jost-v4-latin-regular.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/vendor/jost/jost-v4-latin-500.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/vendor/jost/jost-v4-latin-700.woff2 as=font type=font/woff2 crossorigin><script src=/js/color-mode.86a91f050a481d0a3f0c72ac26543cb6228c770875981c58dcbc008fd3f875c8.js integrity="sha256-hqkfBQpIHQo/DHKsJlQ8tiKMdwh1mBxY3LwAj9P4dcg="></script><link rel=stylesheet href="/main.9e40c56670753f6ab5af5ebe5d194803bc7bade77a61a4a4d3fdd4ec0e4982c6093de44fb34461093fae18d0f38095f0df52a5cad408f61745fe3b9570720cb0.css" integrity="sha512-nkDFZnB1P2q1r16+XRlIA7x7red6YaSk0/3U7A5JgsYJPeRPs0RhCT+uGNDzgJXw31KlytQI9hdF/juVcHIMsA==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><base href=/math_notes/cvx_optimization/cog/><link rel=canonical href=/math_notes/cvx_optimization/cog/><title>Center of Gravity Method | Samuel Wade Wang</title>
+<!doctype html><html lang=en data-bs-theme=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=preload href=/fonts/vendor/jost/jost-v4-latin-regular.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/vendor/jost/jost-v4-latin-500.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/vendor/jost/jost-v4-latin-700.woff2 as=font type=font/woff2 crossorigin><script src=/js/color-mode.86a91f050a481d0a3f0c72ac26543cb6228c770875981c58dcbc008fd3f875c8.js integrity="sha256-hqkfBQpIHQo/DHKsJlQ8tiKMdwh1mBxY3LwAj9P4dcg="></script><link rel=stylesheet href="/main.c5573cd81011e24c7a753ab9536494f2bccc646c77c96aa3ecf188a72575013232aa4ab5a4bd39303ea7c77e1587f410c4016617317fd4e0c15cd5267de28b1f.css" integrity="sha512-xVc82BAR4kx6dTq5U2SU8rzMZGx3yWqj7PGIpyV1ATIyqkq1pL05MD6nx34Vh/QQxAFmFzF/1ODBXNUmfeKLHw==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><base href=/math_notes/cvx_optimization/cog/><link rel=canonical href=/math_notes/cvx_optimization/cog/><title>Center of Gravity Method | Samuel Wade Wang</title>
 <meta name=description content="Personal Page"><link rel=icon href=/favicon.ico sizes=32x32><link rel=icon href=/favicon.svg type=image/svg+xml><link rel=apple-touch-icon href=/apple-touch-icon.png sizes=180x180 type=image/png><link rel=icon href=/favicon-192x192.png sizes=192x192 type=image/png><link rel=icon href=/favicon-512x512.png sizes=512x512 type=image/png><link rel=manifest href=/manifest.webmanifest><meta property="og:url" content="/math_notes/cvx_optimization/cog/"><meta property="og:site_name" content="Samuel Wade Wang"><meta property="og:title" content="Center of Gravity Method"><meta property="og:description" content="Todo Items"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="math_notes"><meta property="article:published_time" content="2024-11-28T12:37:23-05:00"><meta property="article:modified_time" content="2024-11-28T12:37:23-05:00"><meta property="og:image" content="/cover.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="/cover.png"><meta name=twitter:title content="Center of Gravity Method"><meta name=twitter:description content="Todo Items"><meta name=twitter:site content="@getdoks"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"/","name":"Welcome","position":1},{"@type":"ListItem","item":"/math_notes/","name":"Math Writings","position":2},{"@type":"ListItem","item":"/math_notes/cvx_optimization/","name":"Convex Optimization Notes","position":3},{"@type":"ListItem","name":"Center of Gravity Method","position":4}]}</script><script nonce="dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=">const toggle_base=(e,t)=>n=>n.ctrlKey&&n.key===e?(n.preventDefault(),t()):null,toggle_light_dark=toggle_base("|",()=>{const e=document.documentElement,t=e.getAttribute("data-bs-theme")==="dark"?"light":"dark";e.setAttribute("data-bs-theme",t),localStorage.setItem("theme",t)}),get_url=e=>window.location.origin+(typeof e=="undefined"?"":"/"+e),toggle_forward=toggle_base("}",()=>history.forward()),toggle_backward=toggle_base("{",()=>history.back()),toggle_top=toggle_base('"',()=>window.scrollTo(0,0)),toggle_bottom=toggle_base("?",()=>window.scrollTo(0,document.body.scrollHeight)),toggle_home=toggle_base("<",()=>window.open(get_url(),"_self")),toggle_keyboards=toggle_base(">",()=>window.open(get_url("keyboards"),"_self"));[toggle_light_dark,toggle_forward,toggle_backward,toggle_top,toggle_bottom,toggle_home,toggle_keyboards].forEach(e=>document.addEventListener("keydown",e))</script></head><body class="single section math_notes" data-bs-spy=scroll data-bs-target=#toc data-bs-root-margin="0px 0px -60%" data-bs-smooth-scroll=true tabindex=0><div class=sticky-top><header class="navbar navbar-expand-lg"><div class=container-xxl><a class="navbar-brand me-auto me-lg-3" href=/>Samuel Wade Wang</a>
 <button type=button id=searchToggleMobile class="btn btn-link nav-link mx-2 d-lg-none" aria-label="Search website">
 <svg class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg>
@@ -63,18 +63,18 @@
 </span>with
 <span class="math math-inline" id=h-sc-math-32><img src=/_11181171538899896716.svg alt="mathematical expression or equation">
 </span>, we define
-<span class="math math-inline" id=h-sc-math-33><img src=/_10797247161884021521.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-33><img src=/_17314857239969476760.svg alt="mathematical expression or equation">
 </span>as the set of elements
-<span class="math math-inline" id=h-sc-math-34><img src=/_5600865074966445306.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-34><img src=/_6269909258969661406.svg alt="mathematical expression or equation">
 </span>with
-<span class="math math-inline" id=h-sc-math-35><img src=/_7624815513691378840.svg alt="mathematical expression or equation">
-</span>satisfying the property
-<span class="math math-inline" id=h-sc-math-36><img src=/_15574769909756613094.svg alt="mathematical expression or equation">
-</span>. We also write:
-<span class="math math-block text-center" id=h-sc-math-37><img src=/_11193041632934487753.svg alt="mathematical expression or equation">
-</span>Specially, given
-<span class="math math-inline" id=h-sc-math-38><img src=/_7624815513691378840.svg alt="mathematical expression or equation">
-</span>, we define the slice:
+<span class="math math-inline" id=h-sc-math-35><img src=/_17228280052699426630.svg alt="mathematical expression or equation">
+</span>. We define
+<span class="math math-inline" id=h-sc-math-36><img src=/_9454607352052609357.svg alt="mathematical expression or equation">
+</span>analogously.</li><li>Given
+<span class="math math-inline" id=h-sc-math-37><img src=/_6165386538739532866.svg alt="mathematical expression or equation">
+</span>,
+<span class="math math-inline" id=h-sc-math-38><img src=/_1413515016073315908.svg alt="mathematical expression or equation">
+</span>, we can consider the slice:
 <span class="math math-block text-center" id=h-sc-math-39><img src=/_15076909789659503236.svg alt="mathematical expression or equation"></span></li></ul><h3 id=22-brunn-minkowski-inequality>2.2. Brunn-Minkowski Inequality<a href=#22-brunn-minkowski-inequality class=anchor aria-hidden=true>#</a></h3><p>A good reference would be this one by R. J. Gardner&rsquo;s review<sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup>. The Brunn-Minkowski inequality in the case of convex bodies can be stated concisely as follows<sup id=fnref:4><a href=#fn:4 class=footnote-ref role=doc-noteref>4</a></sup>:</p><div class="callout callout-caution d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="outline/note svg-inline callout-icon me-2 mb-3" id="svg-note" role="img"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13 20l7-7"/><path d="M13 20v-6a1 1 0 011-1h6V6a2 2 0 00-2-2H6A2 2 0 004 6v12a2 2 0 002 2h7"/></svg><div class=callout-content><div class=callout-title><p>Brunn-Minkowski Inequality</p></div><div class=callout-body><p>Fixed convex bodies
 <span class="math math-inline" id=h-sc-math-0><img src=/_3419664422146086964.svg alt="mathematical expression or equation">
 </span>.</p><ol><li><strong>Additive.</strong> The function
@@ -116,97 +116,93 @@
 </span>by applying <a href=https://en.wikipedia.org/wiki/AM%E2%80%93GM_inequality>AM-GM</a> to the
 <span class="math math-inline" id=h-sc-math-57><img src=/_11319234981750229243.svg alt="mathematical expression or equation">
 </span>terms.</li><li><strong>Inductive Step.</strong> By permuting and realignment, may assume
-<span class="math math-inline" id=h-sc-math-58><img src=/_10199000494707930610.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-58><img src=/_13329259177593731399.svg alt="mathematical expression or equation">
 </span>,
-<span class="math math-inline" id=h-sc-math-59><img src=/_4319677186906543305.svg alt="mathematical expression or equation">
-</span>,
-<span class="math math-inline" id=h-sc-math-60><img src=/_13337080033337985771.svg alt="mathematical expression or equation">
-</span>,
-<span class="math math-inline" id=h-sc-math-61><img src=/_9680791467400061802.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-59><img src=/_17339116793522558855.svg alt="mathematical expression or equation">
 </span>have positive measures, with
-<span class="math math-inline" id=h-sc-math-62><img src=/_7576454650615574753.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-60><img src=/_6167095601430423905.svg alt="mathematical expression or equation">
 </span>both being smaller than
-<span class="math math-inline" id=h-sc-math-63><img src=/_3503802952713912383.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-61><img src=/_3503802952713912383.svg alt="mathematical expression or equation">
 </span>, and that:
-<span class="math math-block text-center" id=h-sc-math-64><img src=/_415345176358682653.svg alt="mathematical expression or equation">
+<span class="math math-block text-center" id=h-sc-math-62><img src=/_415345176358682653.svg alt="mathematical expression or equation">
 </span>which concludes the proof:
-<span class="math math-block text-center" id=h-sc-math-65><img src=/_9009967738878587808.svg alt="mathematical expression or equation"></span></li></ul><div class="callout callout-tip d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="outline/bulb svg-inline callout-icon me-2 mb-3" id="svg-bulb" role="img"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8-9v1m8 8h1M5.6 5.6l.7.7m12.1-.7-.7.7"/><path d="M9 16a5 5 0 116 0 3.5 3.5.0 00-1 3 2 2 0 01-4 0 3.5 3.5.0 00-1-3"/><path d="M9.7 17h4.6"/></svg><div class=callout-content><div class=callout-title><p>Aside</p></div><div class=callout-body><p>Another common way to prove it is to first use <a href=https://en.wikipedia.org/wiki/Pr%C3%A9kopa%E2%80%93Leindler_inequality><em>Prékopa–Leindler&rsquo;s inequality</em></a> (specialized to characteristic functions) to establish the multiplicative version, then derive the additive version. The interested readers can consult this <a href=https://cs.uwaterloo.ca/~lapchi/cs798/L19.pdf>lecture note</a>.</p></div></div></div><h3 id=23-grünbaum-inequality>2.3. Grünbaum Inequality<a href=#23-grünbaum-inequality class=anchor aria-hidden=true>#</a></h3><p>I highly recommend checking out this <a href=https://cs.uwaterloo.ca/~lapchi/cs798/L19.pdf>lecture note</a> from <a href=https://cs.uwaterloo.ca/~lapchi/cs798/>this course</a> by <a href=https://cs.uwaterloo.ca/~lapchi/>Lap Chi Lau</a>.</p><div class="callout callout-caution d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="outline/note svg-inline callout-icon me-2 mb-3" id="svg-note" role="img"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13 20l7-7"/><path d="M13 20v-6a1 1 0 011-1h6V6a2 2 0 00-2-2H6A2 2 0 004 6v12a2 2 0 002 2h7"/></svg><div class=callout-content><div class=callout-title><p>Grünbaum Inequality</p></div><div class=callout-body><p>Given convex body
+<span class="math math-block text-center" id=h-sc-math-63><img src=/_9009967738878587808.svg alt="mathematical expression or equation"></span></li></ul><div class="callout callout-tip d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="outline/bulb svg-inline callout-icon me-2 mb-3" id="svg-bulb" role="img"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8-9v1m8 8h1M5.6 5.6l.7.7m12.1-.7-.7.7"/><path d="M9 16a5 5 0 116 0 3.5 3.5.0 00-1 3 2 2 0 01-4 0 3.5 3.5.0 00-1-3"/><path d="M9.7 17h4.6"/></svg><div class=callout-content><div class=callout-title><p>Aside</p></div><div class=callout-body><p>Another common way to prove it is to first use <a href=https://en.wikipedia.org/wiki/Pr%C3%A9kopa%E2%80%93Leindler_inequality><em>Prékopa–Leindler&rsquo;s inequality</em></a> (specialized to characteristic functions) to establish the multiplicative version, then derive the additive version. The interested readers can consult this <a href=https://cs.uwaterloo.ca/~lapchi/cs798/L19.pdf>lecture note</a>.</p></div></div></div><h3 id=23-grünbaum-inequality>2.3. Grünbaum Inequality<a href=#23-grünbaum-inequality class=anchor aria-hidden=true>#</a></h3><p>I highly recommend checking out this <a href=https://cs.uwaterloo.ca/~lapchi/cs798/L19.pdf>lecture note</a> from <a href=https://cs.uwaterloo.ca/~lapchi/cs798/>this course</a> by <a href=https://cs.uwaterloo.ca/~lapchi/>Lap Chi Lau</a>.</p><div class="callout callout-caution d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="outline/note svg-inline callout-icon me-2 mb-3" id="svg-note" role="img"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13 20l7-7"/><path d="M13 20v-6a1 1 0 011-1h6V6a2 2 0 00-2-2H6A2 2 0 004 6v12a2 2 0 002 2h7"/></svg><div class=callout-content><div class=callout-title><p>Grünbaum Inequality</p></div><div class=callout-body><p>Given convex body
 <span class="math math-inline" id=h-sc-math-0><img src=/_6165386538739532866.svg alt="mathematical expression or equation">
 </span>with COG at
 <span class="math math-inline" id=h-sc-math-1><img src=/_531640510653287224.svg alt="mathematical expression or equation">
 </span>, we have
 <span class="math math-inline" id=h-sc-math-2><img src=/_3670716120506921602.svg alt="mathematical expression or equation">
 </span>.</p></div></div></div><p>The proof is a series of clever reductions to simpler cases. It would be beneficial to give definitions to these cases. Given a nonnegative function
-<span class="math math-inline" id=h-sc-math-68><img src=/_14430303334312663306.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-66><img src=/_14430303334312663306.svg alt="mathematical expression or equation">
 </span>with support a closed interval
-<span class="math math-inline" id=h-sc-math-69><img src=/_15761118476130015470.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-67><img src=/_15761118476130015470.svg alt="mathematical expression or equation">
 </span>containing
-<span class="math math-inline" id=h-sc-math-70><img src=/_12036095542911794333.svg alt="mathematical expression or equation">
-</span>, we can define a solid of revolution, given by:</p><span class="math math-block text-center" id=h-sc-math-71><img src=/_389633562610194698.svg alt="mathematical expression or equation"></span><p>Note that
-<span class="math math-inline" id=h-sc-math-72><img src=/_15955745554893713481.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-68><img src=/_12036095542911794333.svg alt="mathematical expression or equation">
+</span>, we can define a solid of revolution, given by:</p><span class="math math-block text-center" id=h-sc-math-69><img src=/_389633562610194698.svg alt="mathematical expression or equation"></span><p>Note that
+<span class="math math-inline" id=h-sc-math-70><img src=/_15955745554893713481.svg alt="mathematical expression or equation">
 </span>is convex iff
-<span class="math math-inline" id=h-sc-math-73><img src=/_14430303334312663306.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-71><img src=/_14430303334312663306.svg alt="mathematical expression or equation">
 </span>is concave. We will see that this is the entry point of Brunn-Minkowski&rsquo;s inequality in the proof of this theorem.</p><h4 id=231-special-case-cone>2.3.1. Special Case: Cone<a href=#231-special-case-cone class=anchor aria-hidden=true>#</a></h4><p>We show the inequality in the case of cones - that is, in the case where
-<span class="math math-inline" id=h-sc-math-74><img src=/_10081450556714477178.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-72><img src=/_10081450556714477178.svg alt="mathematical expression or equation">
 </span>with
-<span class="math math-inline" id=h-sc-math-75><img src=/_8913636518134568636.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-73><img src=/_8913636518134568636.svg alt="mathematical expression or equation">
 </span>and with
-<span class="math math-inline" id=h-sc-math-76><img src=/_14430303334312663306.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-74><img src=/_14430303334312663306.svg alt="mathematical expression or equation">
 </span>being linear. May assume
-<span class="math math-inline" id=h-sc-math-77><img src=/_14193609193610905646.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-75><img src=/_14193609193610905646.svg alt="mathematical expression or equation">
 </span>. We get
-<span class="math math-inline" id=h-sc-math-78><img src=/_13706881599892304136.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-76><img src=/_13706881599892304136.svg alt="mathematical expression or equation">
 </span>by the following equation utilizing the condition that the COG of
-<span class="math math-inline" id=h-sc-math-79><img src=/_3490906564445850252.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-77><img src=/_3490906564445850252.svg alt="mathematical expression or equation">
 </span>is
-<span class="math math-inline" id=h-sc-math-80><img src=/_531640510653287224.svg alt="mathematical expression or equation">
-</span>:</p><span class="math math-block text-center" id=h-sc-math-81><img src=/_17261417975991905581.svg alt="mathematical expression or equation"></span><p>which gives:</p><span class="math math-block text-center" id=h-sc-math-82><img src=/_9242739727558653380.svg alt="mathematical expression or equation"></span><h4 id=232-special-case-convex-solids-of-revolution>2.3.2. Special Case: Convex Solids of Revolution<a href=#232-special-case-convex-solids-of-revolution class=anchor aria-hidden=true>#</a></h4><p>Now we show the inequality in the case of solids of revolution. Suppose the convex body
-<span class="math math-inline" id=h-sc-math-83><img src=/_3490906564445850252.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-78><img src=/_531640510653287224.svg alt="mathematical expression or equation">
+</span>:</p><span class="math math-block text-center" id=h-sc-math-79><img src=/_17261417975991905581.svg alt="mathematical expression or equation"></span><p>which gives:</p><span class="math math-block text-center" id=h-sc-math-80><img src=/_9242739727558653380.svg alt="mathematical expression or equation"></span><h4 id=232-special-case-convex-solids-of-revolution>2.3.2. Special Case: Convex Solids of Revolution<a href=#232-special-case-convex-solids-of-revolution class=anchor aria-hidden=true>#</a></h4><p>Now we show the inequality in the case of solids of revolution. Suppose the convex body
+<span class="math math-inline" id=h-sc-math-81><img src=/_3490906564445850252.svg alt="mathematical expression or equation">
 </span>has the form
-<span class="math math-inline" id=h-sc-math-84><img src=/_10081450556714477178.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-82><img src=/_10081450556714477178.svg alt="mathematical expression or equation">
 </span>, then
-<span class="math math-inline" id=h-sc-math-85><img src=/_14430303334312663306.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-83><img src=/_14430303334312663306.svg alt="mathematical expression or equation">
 </span>is concave, say with support
-<span class="math math-inline" id=h-sc-math-86><img src=/_7768746760209082574.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-84><img src=/_7768746760209082574.svg alt="mathematical expression or equation">
 </span>. Associate to
-<span class="math math-inline" id=h-sc-math-87><img src=/_14430303334312663306.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-85><img src=/_14430303334312663306.svg alt="mathematical expression or equation">
 </span>a function
-<span class="math math-inline" id=h-sc-math-88><img src=/_17238331370417498315.svg alt="mathematical expression or equation">
-</span>, with the following properties:</p><ol><li><span class="math math-inline" id=h-sc-math-89><img src=/_9637267702841978305.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-86><img src=/_17238331370417498315.svg alt="mathematical expression or equation">
+</span>, with the following properties:</p><ol><li><span class="math math-inline" id=h-sc-math-87><img src=/_9637267702841978305.svg alt="mathematical expression or equation">
 </span>with
-<span class="math math-inline" id=h-sc-math-90><img src=/_11263783252583836129.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-88><img src=/_11263783252583836129.svg alt="mathematical expression or equation">
 </span>containing
-<span class="math math-inline" id=h-sc-math-91><img src=/_12036095542911794333.svg alt="mathematical expression or equation"></span></li><li><span class="math math-inline" id=h-sc-math-92><img src=/_17238331370417498315.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-89><img src=/_12036095542911794333.svg alt="mathematical expression or equation"></span></li><li><span class="math math-inline" id=h-sc-math-90><img src=/_17238331370417498315.svg alt="mathematical expression or equation">
 </span>is non-negative, linear on
-<span class="math math-inline" id=h-sc-math-93><img src=/_11716818541539397115.svg alt="mathematical expression or equation"></span></li><li><span class="math math-inline" id=h-sc-math-94><img src=/_16142053924656497711.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-91><img src=/_11716818541539397115.svg alt="mathematical expression or equation"></span></li><li><span class="math math-inline" id=h-sc-math-92><img src=/_16142053924656497711.svg alt="mathematical expression or equation">
 </span>,
-<span class="math math-inline" id=h-sc-math-95><img src=/_17565544776893888137.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-93><img src=/_17565544776893888137.svg alt="mathematical expression or equation">
 </span>,
-<span class="math math-inline" id=h-sc-math-96><img src=/_11450349696385142646.svg alt="mathematical expression or equation"></span></li></ol><p>then by concavity of
-<span class="math math-inline" id=h-sc-math-97><img src=/_14430303334312663306.svg alt="mathematical expression or equation">
-</span>and these conditions, one can show that:</p><ol><li><span class="math math-inline" id=h-sc-math-98><img src=/_12723828837011598438.svg alt="mathematical expression or equation"></span></li><li><span class="math math-inline" id=h-sc-math-99><img src=/_14430303334312663306.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-94><img src=/_11450349696385142646.svg alt="mathematical expression or equation"></span></li></ol><p>then by concavity of
+<span class="math math-inline" id=h-sc-math-95><img src=/_14430303334312663306.svg alt="mathematical expression or equation">
+</span>and these conditions, one can show that:</p><ol><li><span class="math math-inline" id=h-sc-math-96><img src=/_12723828837011598438.svg alt="mathematical expression or equation"></span></li><li><span class="math math-inline" id=h-sc-math-97><img src=/_14430303334312663306.svg alt="mathematical expression or equation">
 </span>dominates
-<span class="math math-inline" id=h-sc-math-100><img src=/_17238331370417498315.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-98><img src=/_17238331370417498315.svg alt="mathematical expression or equation">
 </span>on
-<span class="math math-inline" id=h-sc-math-101><img src=/_11996569619891236278.svg alt="mathematical expression or equation">
-</span>.</li><li><span class="math math-inline" id=h-sc-math-102><img src=/_17238331370417498315.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-99><img src=/_11996569619891236278.svg alt="mathematical expression or equation">
+</span>.</li><li><span class="math math-inline" id=h-sc-math-100><img src=/_17238331370417498315.svg alt="mathematical expression or equation">
 </span>dominates
-<span class="math math-inline" id=h-sc-math-103><img src=/_14430303334312663306.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-101><img src=/_14430303334312663306.svg alt="mathematical expression or equation">
 </span>on
-<span class="math math-inline" id=h-sc-math-104><img src=/_202132770921922322.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-102><img src=/_202132770921922322.svg alt="mathematical expression or equation">
 </span>.</li></ol><p>Therefore, the COG of
-<span class="math math-inline" id=h-sc-math-105><img src=/_15683522669664891643.svg alt="mathematical expression or equation">
-</span>is non-positive, so the special case for cones gives:</p><span class="math math-block text-center" id=h-sc-math-106><img src=/_13897933534878345182.svg alt="mathematical expression or equation"></span><h4 id=233-general-case-reduction-to-solids-of-revolution>2.3.3. General Case: Reduction to Solids of Revolution<a href=#233-general-case-reduction-to-solids-of-revolution class=anchor aria-hidden=true>#</a></h4><p>For a general convex body
-<span class="math math-inline" id=h-sc-math-107><img src=/_3490906564445850252.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-103><img src=/_15683522669664891643.svg alt="mathematical expression or equation">
+</span>is non-positive, so the special case for cones gives:</p><span class="math math-block text-center" id=h-sc-math-104><img src=/_13897933534878345182.svg alt="mathematical expression or equation"></span><h4 id=233-general-case-reduction-to-solids-of-revolution>2.3.3. General Case: Reduction to Solids of Revolution<a href=#233-general-case-reduction-to-solids-of-revolution class=anchor aria-hidden=true>#</a></h4><p>For a general convex body
+<span class="math math-inline" id=h-sc-math-105><img src=/_3490906564445850252.svg alt="mathematical expression or equation">
 </span>, consider the function
-<span class="math math-inline" id=h-sc-math-108><img src=/_5202652775833604333.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-106><img src=/_5202652775833604333.svg alt="mathematical expression or equation">
 </span>, given by:
-<span class="math math-block text-center" id=h-sc-math-109><img src=/_13578309634576368430.svg alt="mathematical expression or equation"></span></p><p>By Brunn-Minkowski, it is a compactly-supported concave non-negative function, so by the identity
-<span class="math math-inline" id=h-sc-math-110><img src=/_13076573078664946391.svg alt="mathematical expression or equation">
+<span class="math math-block text-center" id=h-sc-math-107><img src=/_13578309634576368430.svg alt="mathematical expression or equation"></span></p><p>By Brunn-Minkowski, it is a compactly-supported concave non-negative function, so by the identity
+<span class="math math-inline" id=h-sc-math-108><img src=/_13076573078664946391.svg alt="mathematical expression or equation">
 </span>, we are done by considering the solid of revolution
-<span class="math math-inline" id=h-sc-math-111><img src=/_15955745554893713481.svg alt="mathematical expression or equation">
-</span><sup id=fnref:6><a href=#fn:6 class=footnote-ref role=doc-noteref>6</a></sup>:</p><span class="math math-block text-center" id=h-sc-math-112><img src=/_9589259910599460799.svg alt="mathematical expression or equation"></span><div class=footnotes role=doc-endnotes><hr><ol><li id=fn:1><p>Bubeck, Sébastien. <em>&ldquo;Convex optimization: Algorithms and complexity.&rdquo;</em> Foundations and Trends® in Machine Learning 8.3-4 (2015): 231-357.&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:2><p><a href=../ellipse>Ellipsoid Method</a>, on this site.&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:3><p>Gardner, Richard. &ldquo;The Brunn-Minkowski Inequality.&rdquo; <em>Bulletin of the American mathematical society</em> 39.3 (2002): 355-405.&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:4><p>For generalists, we remind that this theorem holds in much general settings. Our assumptions guarantees that
+<span class="math math-inline" id=h-sc-math-109><img src=/_15955745554893713481.svg alt="mathematical expression or equation">
+</span><sup id=fnref:6><a href=#fn:6 class=footnote-ref role=doc-noteref>6</a></sup>:</p><span class="math math-block text-center" id=h-sc-math-110><img src=/_9589259910599460799.svg alt="mathematical expression or equation"></span><div class=footnotes role=doc-endnotes><hr><ol><li id=fn:1><p>Bubeck, Sébastien. <em>&ldquo;Convex optimization: Algorithms and complexity.&rdquo;</em> Foundations and Trends® in Machine Learning 8.3-4 (2015): 231-357.&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:2><p><a href=../ellipse>Ellipsoid Method</a>, on this site.&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:3><p>Gardner, Richard. &ldquo;The Brunn-Minkowski Inequality.&rdquo; <em>Bulletin of the American mathematical society</em> 39.3 (2002): 355-405.&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:4><p>For generalists, we remind that this theorem holds in much general settings. Our assumptions guarantees that
 <span class="math math-inline" id=h-sc-math-41><img src=/_5151172839092198168.svg alt="mathematical expression or equation">
 </span>(which <a href=https://math.stackexchange.com/questions/2410875/the-minkowski-sum-of-two-convex-sets-is-convex>is also a convex body</a>) <a href=https://math.stackexchange.com/questions/207609/the-measurability-of-convex-sets>is measurable</a> with positive finite volume, which would avoid unfun cases.&#160;<a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:5><p>One can also show that multiplicative version implies the additive version. We don&rsquo;t need it here though.&#160;<a href=#fnref:5 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:6><p>This is often called the &ldquo;symmetrization&rdquo; of
-<span class="math math-inline" id=h-sc-math-113><img src=/_3490906564445850252.svg alt="mathematical expression or equation">
+<span class="math math-inline" id=h-sc-math-111><img src=/_3490906564445850252.svg alt="mathematical expression or equation">
 </span>in the literatures.&#160;<a href=#fnref:6 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></div><div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between"></div><div class="page-nav d-flex flex-column flex-sm-row"><div class="card w-100"><div class="card-body d-flex"><div class="d-flex flex-column justify-content-center"><svg class="icon icon-tabler icon-tabler-arrow-left" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12h14"/><path d="M5 12l6 6"/><path d="M5 12l6-6"/></svg></div><div class="d-flex flex-column"><div class=text-body-secondary>Prev</div><a href=/math_notes/cvx_optimization/ellipse/ class="stretched-link text-reset text-decoration-none">Ellipsoid Method</a></div></div></div></div></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 text-center text-lg-start"><ul class=list-inline><li class=list-inline-item><a class=text-muted href=/keyboards/>Keyboard Shortcuts</a></li></ul></div><div class="col-lg-8 text-center text-lg-end"><ul class=list-inline><li class=list-inline-item>Brought to you by <a class=text-muted href=https://thulite.io/>Thulite</a></li></ul></div></div></div></footer><script async src=/js/app.c17553444ec7c62f781ddbaa011948f6d85a1bab49420047d68a2b89852a8b36.js integrity="sha256-wXVTRE7Hxi94HduqARlI9thaG6tJQgBH1ooriYUqizY="></script><script async src=/js/flexsearch.7b25ae2da7ab3cc745d4f8536e3f914f92ea8b1afad96ab9249c160c35e0648c.js integrity="sha256-eyWuLaerPMdF1PhTbj+RT5Lqixr62Wq5JJwWDDXgZIw="></script><script async src=/js/search-modal.0415aa45353ab123a509f6ddc6861549ece898b90872fcf757cd2663041dac96.js integrity="sha256-BBWqRTU6sSOlCfbdxoYVSezomLkIcvz3V80mYwQdrJY="></script><div class="d-inline-flex fixed-bottom-right pb-4 pe-4"><button id=toTop type=button class="btn btn-primary rounded-circle ms-auto p-2"><span class=visually-hidden>Top</span><svg class="icon icon-tabler icon-tabler-chevron-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 15l6-6 6 6"/></svg></button></div></body></html>

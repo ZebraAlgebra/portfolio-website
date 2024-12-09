@@ -81,9 +81,8 @@ We introduce the following notations:
 - We write {{< math >}}$\nu_m:=\operatorname{vol}(B(O_m;1))${{< /math >}}, the volume of the unit ball (in {{< math >}}$\mathbb{R}^m${{< /math >}})
 - Given a measurable subset {{< math >}}$X\subset\mathbb{R}^m${{< /math >}}, we write {{< math >}}$\rho_m(X):=\sqrt[m]{\operatorname{vol}(X)/\nu_m}${{< /math >}}, which satisfies:
   {{< math class="text-center">}}$$\operatorname{vol}(B(O_m;\rho_m(X)))=\operatorname{vol}(X)$${{< /math >}}
-- Given {{< math >}}$X\subset\mathbb{R}^m${{< /math >}} with {{< math >}}$m\geq 2${{< /math >}}, we define {{< math >}}$X_{\ast}${{< /math >}} as the set of elements {{< math >}}$(u,v)\in X${{< /math >}} with {{< math >}}$u\in\mathbb{R}${{< /math >}} satisfying the property {{< math >}}$\ast${{< /math >}}. We also write:
-{{< math class="text-center">}}$$X_+:=X_{\geq0},\;X_-:=X_{\leq0},$${{< /math >}}
-  Specially, given {{< math >}}$u\in\mathbb{R}${{< /math >}}, we define the slice:
+- Given {{< math >}}$X\subset\mathbb{R}^m${{< /math >}} with {{< math >}}$m\geq 2${{< /math >}}, we define {{< math >}}$X_{-}${{< /math >}} as the set of elements {{< math >}}$x\in X${{< /math >}} with {{< math >}}$x\cdot e_1\leq0${{< /math >}}. We define {{< math >}}$X_+${{< /math >}} analogously.
+- Given {{< math >}}$X\subset\mathbb{R}^m${{< /math >}}, {{< math >}}$x\in\mathbb{R}${{< /math >}}, we can consider the slice:
   {{< math class="text-center">}}$$X_{u,:}=\{v\in\mathbb{R}^{m-1}:(u,v)\in X\}\subset\mathbb{R}^{m-1}$${{< /math >}}
 
 
@@ -113,7 +112,7 @@ By definition of Lebesgue measures, it suffices to show the case where {{< math 
 - **Base Case.** If {{< math >}}$n_A+n_B=2${{< /math >}}, may assume {{< math >}}$A=\bigtimes_{i=1}^m[0,a_i]${{< /math >}}, {{< math >}}$B=\bigtimes_{i=1}^m[0,b_i]${{< /math >}}, giving:
   {{< math class="text-center">}}$$\frac{\rho_m(A)+\rho_m(B)}{\rho_m(A+B)}=\sqrt[m]{\prod_{i=1}^m\frac{a_i}{a_i+b_i}}+\sqrt[m]{\prod_{i=1}^m\frac{b_i}{a_i+b_i}}\leq 1$${{< /math >}}
   by applying [AM-GM](https://en.wikipedia.org/wiki/AM%E2%80%93GM_inequality) to the {{< math >}}$\sqrt[m]{\cdot}${{< /math >}} terms.
-- **Inductive Step.** By permuting and realignment, may assume {{< math >}}$A_{\leq 0}${{< /math >}}, {{< math >}}$A_{\geq 0}${{< /math >}}, {{< math >}}$B_{\leq 0}${{< /math >}}, {{< math >}}$B_{\geq 0}${{< /math >}} have positive measures, with {{< math >}}$n_{A_{\leq 0}},n_{A_{\geq 0}}${{< /math >}} both being smaller than {{< math >}}$n_A${{< /math >}}, and that:
+- **Inductive Step.** By permuting and realignment, may assume {{< math >}}$A_{\pm}${{< /math >}}, {{< math >}}$B_{\pm}${{< /math >}} have positive measures, with {{< math >}}$n_{A_{\pm}}${{< /math >}} both being smaller than {{< math >}}$n_A${{< /math >}}, and that:
   {{< math class="text-center">}}$$\frac{\rho_m(A_{\pm})}{\rho_m(A)}=\frac{\rho_m(B_{\pm})}{\rho_m(B)}=\alpha_\pm\in(0,1)$${{< /math >}}
   which concludes the proof:
   {{< math class="text-center">}}

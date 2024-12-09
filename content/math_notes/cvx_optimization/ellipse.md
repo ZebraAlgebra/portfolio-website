@@ -47,7 +47,7 @@ On this set, we have the function bounds and volume bounds on {{< math class="te
 
 {{< math class="text-center">}}$$\sup f(\mathcal{X}_\varepsilon)\leq f^\ast+2\varepsilon B$${{< /math >}}
 
-{{< math class="text-center">}}$$\varepsilon^m\operatorname{vol}(B(O;r))\subset \operatorname{vol}(\mathcal{X}_\varepsilon)\leq \varepsilon^m\operatorname{vol}(B(O;R))$${{< /math >}}
+{{< math class="text-center">}}$$\varepsilon^m\operatorname{vol}(B(O;r))\leq \operatorname{vol}(\mathcal{X}_\varepsilon)\leq \varepsilon^m\operatorname{vol}(B(O;R))$${{< /math >}}
 
 by utilizing our assumptions on convexity, volume and value bounds. In this sense, we have the following general idea:
 

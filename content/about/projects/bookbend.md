@@ -5,7 +5,7 @@ summary: ""
 date: 2024-12-03T17:40:15-05:00
 lastmod: 2024-12-03T17:40:15-05:00
 draft: false
-weight: 100
+weight: 200
 seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
@@ -63,11 +63,16 @@ I thought the idea of project was pretty cool, but I will talk about some improv
 
 - {{< inline-svg "outline/users" >}} **UI/UX Issues**: The view for existing users is extremely inconvenient - I implemented in a way that one can only click alone one direction to look at one book at a time. This is one part that I wanted to improve, but I was not very adept with the MUI library at that time.
 
-- {{< inline-svg "outline/device-tablet-minus" >}} **RWD Design**: I didn't have time finishing the webapp design for adaptability for devices of various size, which is a crucial aspect of modern webapp devlopment, although breakpoints for media queries were used.
+- {{< inline-svg "outline/device-tablet-minus" >}} **RWD Design**: I didn't have time finishing the webapp design for adaptability for devices of various size, which is a crucial aspect of modern webapp development, although breakpoints for media queries were used.
 
 ## Final Thoughts
 
-This is my first time trying to build an end-to-end pseudo-complete data product with a team. This might be a weird of saying this, but during my days in the OMSA program, I was always suprised when I see _datas actually doing stuffs_.
+This is my first time trying to build an end-to-end pseudo-complete data product with a team. This might be a weird of saying this, but during my days in the OMSA program, I was always suprised and happy to see when datas come to life.
+
+I learned a lot from this project:
+1. I used to have some "have watched some Udemy React course" React skill, and vague experience with other frontend development stuffs, but this project really pushed me to put these into works.
+2. This is my first time reading Flask backend codes, connecting frontend apps to it, as well as designing some additional endpoints. I used to have a vague idea on how maybe Python can be used to do such things, but working with teammates that have backend skills enabled me to see how this *actually works*.
+3. This is my first time learning about the BERT model. I made up my mind at that time to learn about this tool and possibly use it in the future when encountering analytics tasks involving NLP components.
 
 {{< card-grid >}}
 {{< link-card title="Back to Projects Page" href="/about/projects/" >}}
