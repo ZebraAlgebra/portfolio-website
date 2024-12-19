@@ -31,4 +31,8 @@ where `C-S-Key` means `Ctrl+Shift+key`, `C-Key` means `Ctrl+key`.
 
 [^2]: In case you are also using doks and are wondering how to add custom shortcuts, you can see my simple implementation [here](https://github.com/ZebraAlgebra/portfolio-website/blob/main/layouts/partials/head/script-header.html). If you are hosting on Netlify, you would also need to modify the [CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) settings (in my case, I used the `unsafe-inline` option as specified in my [`netlify.toml`](https://github.com/ZebraAlgebra/portfolio-website/blob/main/netlify.toml#L43)) for custom inline javascripts to be able to execute in production environment.
 
+{{< img src="images/kb/kb.png" alt="Selfie" class="col-14 col-sm-13 col-md-12 col-lg-11 mx-auto">}}
+
+(keymaps schematics produced with [keyboardsimulator](https://keyboardsimulator.xyz/))
+
 {{< link-card title="Back to Home" href="/" >}}
