@@ -3,7 +3,7 @@ title: "~Welcome~"
 description: "Author: Samuel Wade Wang"
 lead: "/ to my personal page 😇! /"
 date: 2024-11-18T22:45:04+02:00
-lastmod: 2024-12-13 23:02:00
+lastmod: 2024-12-18 23:51:45
 draft: false
 seo:
   title: "Landing Page | Samuel Wade Wang" # custom title (optional)
