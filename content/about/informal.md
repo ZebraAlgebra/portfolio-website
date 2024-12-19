@@ -34,7 +34,7 @@ Let us play a little name game.
 My maternal grandfather was of Shandong heritage, and my paternal grandfather was of Shanghai heritage.
 {{< /details >}}
 7. You might have suspected that the "Wade" in my English middle name is an indirect translation of my "Wei" in my Chinese name. That is in fact true!
-9. I have a brother and a sister - their names are Daniel Jay Wang, and Stephanie Ann Wang. Following the similar naming scheme. Let's guess their Chinese names:
+8. I have a brother and a sister - their names are Daniel Jay Wang, and Stephanie Ann Wang. Following the similar naming scheme. Let's guess their Chinese names:
 {{< details "Reveal Hint 1" >}}
 Hint 1: They also have two syllable names
 {{< /details >}}
@@ -44,7 +44,8 @@ Hint 2: They are also common Chinese names, with famous people sharing the same 
 {{< details "Reveal Answer" >}}
 Daniel Jay Wang: 王傑(杰), Stephanie Ann Wang: 王安
 {{< /details >}}
-10. My brother (resp. sister) is older than me by 8 (resp. 10) years. From this age-gap info, you might infer that the "Samuel" in my English first name might arise from the fact that my mother gave birth to me at a relatively older age, which relates to some biblical stories of mothers giving birth at relatively later age[^2]. You might also figured out that I was raised in a Christian family. These are all true, and I would be genuinely surprised if you figured this out 🤯.
+9. My brother (resp. sister) is older than me by 8 (resp. 10) years. From this age-gap info, you might infer that the "Samuel" in my English first name might arise from the fact that my mother gave birth to me at a relatively older age, which relates to some biblical stories of mothers giving birth at relatively later age[^2]. You might also figured out that I was raised in a Christian family. These are all true, and I would be genuinely surprised if you figured this out 🤯.
+10. Based on these 9 points, you might have guessed that I am a nerdy person that likes to spend time on weird details, and have a weird sense of humor. I would neither deny nor admit that these assertions are in fact true.
 
 ## Short Bio
 
