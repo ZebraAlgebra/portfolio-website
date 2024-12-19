@@ -1,18 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About Me on Samuel Wade Wang</title><link>/about/</link><description>Recent content in About Me on Samuel Wade Wang</description><generator>Hugo</generator><language>en</language><copyright>Copyright (c) 2020-2024 Thulite</copyright><lastBuildDate>Wed, 20 Nov 2024 19:56:15 -0500</lastBuildDate><atom:link href="/about/index.xml" rel="self" type="application/rss+xml"/><item><title>CV/Resume</title><link>/about/resume/</link><pubDate>Wed, 20 Nov 2024 17:49:31 -0500</pubDate><guid>/about/resume/</guid><description>My curriculum vitae and resume.</description></item><item><title>Informal Self-Introduction</title><link>/about/informal/</link><pubDate>Wed, 20 Nov 2024 19:56:15 -0500</pubDate><guid>/about/informal/</guid><description>&lt;h2 id="a-little-name-game">A Little Name Game&lt;/h2>
-
-&lt;picture>
- &lt;source type="image/webp" data-srcset="/images/about/selfie_hu11235025461993587953.webp 480w,/images/about/selfie_hu12367463942586104365.webp 576w,/images/about/selfie_hu4886805484770936236.webp 768w,/images/about/selfie_hu6789967017663324561.webp 1025w,/images/about/selfie_hu13280889923966990184.webp 1200w,/images/about/selfie_hu14114339937800476066.webp 1440w,/images/about/selfie_hu1321230002598964713.webp 1984w"
- data-sizes="auto">
- &lt;img
- src="data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAwAgCdASoQABAAAph8J5QAAsQdqHDmbFPfAAD&amp;#43;05q9RTZ4gO/pEsA2M7hHuLCx5f9&amp;#43;Q7gyFHLQu1vqC69QjizJa&amp;#43;GUWxB6CgA15M0FMAA="
- data-src="/images/about/selfie_hu11513456767517805892.jpg"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About Me on Samuel Wade Wang</title><link>/about/</link><description>Recent content in About Me on Samuel Wade Wang</description><generator>Hugo</generator><language>en</language><copyright>Copyright (c) 2020-2024 Thulite</copyright><lastBuildDate>Wed, 20 Nov 2024 19:56:15 -0500</lastBuildDate><atom:link href="/about/index.xml" rel="self" type="application/rss+xml"/><item><title>CV/Resume</title><link>/about/resume/</link><pubDate>Wed, 20 Nov 2024 17:49:31 -0500</pubDate><guid>/about/resume/</guid><description>My curriculum vitae and resume.</description></item><item><title>Informal Self-Introduction</title><link>/about/informal/</link><pubDate>Wed, 20 Nov 2024 19:56:15 -0500</pubDate><guid>/about/informal/</guid><description>&lt;img
+ srcset="data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAwAgCdASoQABAAAph8J5QAAsQdqHDmbFPfAAD&amp;#43;05q9RTZ4gO/pEsA2M7hHuLCx5f9&amp;#43;Q7gyFHLQu1vqC69QjizJa&amp;#43;GUWxB6CgA15M0FMAA="
+ data-srcset="/images/about/selfie_hu11235025461993587953.webp 480w,/images/about/selfie_hu12367463942586104365.webp 576w,/images/about/selfie_hu4886805484770936236.webp 768w,/images/about/selfie_hu6789967017663324561.webp 1025w,/images/about/selfie_hu13280889923966990184.webp 1200w,/images/about/selfie_hu14114339937800476066.webp 1440w,/images/about/selfie_hu1321230002598964713.webp 1984w"
+ data-sizes="auto"
+ src="/images/about/selfie_hu11513456767517805892.jpg"
  width="1984"
  height="1984"
  decoding="async"
  fetchpriority="auto"
  loading="lazy"
  alt="Selfie"
- class="lazyload blur-up col-sm-8 col-md-6 col-lg-5 mb-4"
- >
-&lt;/picture>
-&lt;p>Let us play a little name game.&lt;/p></description></item></channel></rss>
+ class="lazyload blur-up col-12 col-sm-8 col-md-7 col-lg-6 px-1 my-4 mx-auto"
+>
+&lt;h2 id="a-little-name-game">A Little Name Game&lt;/h2>
+&lt;p>Let us play a little name game.&lt;/p></description></item><item><title>'Now' Page</title><link>/about/now_page/</link><pubDate>Wed, 20 Nov 2024 17:49:31 -0500</pubDate><guid>/about/now_page/</guid><description>A now page</description></item></channel></rss>

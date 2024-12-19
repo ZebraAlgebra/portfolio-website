@@ -20,7 +20,7 @@ A PDF version can be found [here](https://drive.google.com/drive/folders/1fhbh23
 ## Contact Infos & Socials
 
 - {{< inline-svg "outline/phone" >}} Phone ~ 713-319-5876
-- {{< inline-svg "outline/home" >}} Location ~ Atlanta, Georgia, U.S.A.
+- {{< inline-svg "outline/home" >}} Location ~ Norcross, Georgia, U.S.A.
 - {{< inline-svg "outline/mail" >}} Email ~ [swang3068@gatech.edu](mailto:swang3068@gatech.edu)
 - {{< inline-svg "outline/brand-linkedin" >}} LinkedIn ~ [swang3068](https://www.linkedin.com/in/swang3068/)
 - {{< inline-svg "outline/brand-github" >}} Github ~ [ZebraAlgebra](https://github.com/ZebraAlgebra/)
@@ -49,12 +49,21 @@ A PDF version can be found [here](https://drive.google.com/drive/folders/1fhbh23
     - Functional / Tensor / Network / Textual / Time Series Data: Scikit-FDA, TensorLy, NetworkX, Statsmodels
   - **Optimization**: PuLP, CVXPY
 
+## Working Experience
+
+- **MedTrans Go Internship** `2024/09-2024/12` `Python` `PowerBI` `Time Series Analysis`
+  - A practicum project sponsered by [MedTrans Go](https://www.medtransgo.com/), an end-to-end data analytics tasks, aiming to quantify and analyze tech updates on sales, as well as identifying other underlying patterns of requests.
+  - Project details can be found in this project page: [**Applied Analytics Practicum**](/about/projects/prac).
+- **Teaching Assistant and Research Assistant** `2019/08-2023/05` (@NTU, Math Department)
+  - Hosted, instructed weekly homework, quiz review sessions & office hours for Calculus, Abstract Algebra as a TA
+  - Collaborated with Prof. Wu-Yen Chuang to work on problems in algebraic geometry as an RA, organized study
+    groups, hosted weekly reading seminars on topics in algebraic geometry and algebraic topology
+
+
 ## Selected Projects (@Georgia Tech)
 
 This page provides an overview. A more detailed description is given in [this page](/about/projects/).
 
-- [**OMSA Practicum (C-Track)**](/about/projects/prac) `2024/09-2024/12` `Python` `PowerBI` `Time Series Analysis`
-  - A practicum project sponsered by [MedTrans Go](https://www.medtransgo.com/), an end-to-end data analytics tasks, aiming to quantify and analyze tech updates on sales, as well as identifying other underlying patterns of requests
 - [**The Last Book Bender**](/about/projects/bookbend) `2024/01-04/2024` `Python` `BERT` `Recommendation Systems` `ReactJS` `Flask`
   - A book recommender and visualization web app, built on Goodreads10k and books from project Gutenberg
 - [**Scaling CF via CBF and Data Injection**](/about/projects/cfcbf) `2024/01-04/2024` `Python` `Recommendation systems` `LaTeX`
@@ -62,17 +71,10 @@ This page provides an overview. A more detailed description is given in [this pa
 - [**flusim**](/about/projects/flusim) `2023/09-2023/12` `Python` `Simulation` `Markov Processes` `LaTeX`
   - A Python package published on TestPyPI, for simulation, calculation of statistics, visualizations of a particular theoretical flu-spread process
 
-## Working Experience
-
-- **Teaching Assistant and Research Assistant** `2019/08-2023/05` (@NTU, Math Department)
-  - Hosted, instructed weekly homework, quiz review sessions & office hours for Calculus, Abstract Algebra as a TA
-  - Collaborated with Prof. Wu-Yen Chuang to work on problems in algebraic geometry as an RA, organized study
-    groups, hosted weekly reading seminars on topics in algebraic geometry and algebraic topology
-
 ## Miscellaneous Experience
 
 - **3DGauCIM: Accelerating 3D Gaussian Splatting via Digital Compute-in-Memory for Real-Time Edge Rendering** `2024/08-2024/11` `publication`
-  - Fourth author in a publication to appear on DAC (Digital Automation Conference)
+  - Fourth author in a publication submitted to DAC (Digital Automation Conference)
   - Helped producing rigorous key 3D visuals illustrating main ideas using Matplotlib, and modularized it as a Python dataclass for the paper's main authors to easily make tweaks on it (such as switching on and off the plot components, using other color schemes or sizes)
   - Simplified and streamlined the mathematical formulations of Gaussian splatting (both 4D and 3D temporal)
 - [**Convex Analysis Notes**](https://github.com/ZebraAlgebra/convex-analysis-notes) `2024/08–2024/10` `ML Theory` `Optimization` `LaTeX` `Git`

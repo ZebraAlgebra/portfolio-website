@@ -15,31 +15,31 @@ seo:
   noindex: false # false (default) or true
 ---
 
-## A Little Name Game
+{{< img src="images/about/selfie.png" alt="Selfie" class="col-12 col-sm-8 col-md-7 col-lg-6 px-1 my-4 mx-auto">}}
 
-{{< picture src="images/about/selfie.png" alt="Selfie" class="col-sm-8 col-md-6 col-lg-5 mb-4" >}}
+## A Little Name Game
 
 Let us play a little name game.
 
 1. My name is Samuel Wade Wang. In person, I look like the photo above (supposedly).
 2. From the photo above, you might have figured out that I am an _Asian_. In fact, I have a Chinese name - written as 王偉, which can be [romanized](https://en.wikipedia.org/wiki/Romanization) as _Wang, Wei_.
 3. If you know some Chinese, you might notice that this name is written in [Traditional Chinese](https://en.wikipedia.org/wiki/Traditional_Chinese_characters) - if written in [Simplified Chinese](https://en.wikipedia.org/wiki/Simplified_Chinese_characters), this name should be written as 王伟.
-{{< details "Random Fact" >}}
+{{< details "Reveal Random Fact" >}}
  This name was once ranked #2 among the [most common names in mainland China](https://zh.wikipedia.org/zh-hant/%E6%9C%80%E5%B8%B8%E8%A6%8B%E5%90%8D%E5%AD%97%E5%88%97%E8%A1%A8#%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86) (based on 2013 data; [things have changed since then](https://en.wikipedia.org/wiki/List_of_most_popular_given_names#Male_names_3)).
 {{< /details >}}
 4. Based on this info, you might guess that I am from either Taiwan, Macao, or Hongkong, some of the major areas[^1] in the North East Asia that uses Tradititional Chinese as their official language.
 5. From the romanization, you might further guess that I am from Taiwan, by the pronunciation. Truly, I grew up in Taiwan, now living in U.S.A. though.
 6. By the fact that I have a two-syllable name instead of three, you might even guess that my family constitutes mainly of [Waishengren](https://en.wikipedia.org/wiki/Waishengren). Yes, you are correct; and yes, we are proud in our [beef noodles](https://en.wikipedia.org/wiki/Beef_noodle_soup#Taiwanese_beef_noodle_soup) skills and recipes.
-{{< details "Details on Heritage" >}}
+{{< details "Reveal Random Detail" >}}
 My maternal grandfather was of Shandong heritage, and my paternal grandfather was of Shanghai heritage.
 {{< /details >}}
 7. You might have suspected that the "Wade" in my English middle name is an indirect translation of my "Wei" in my Chinese name. That is in fact true!
 8. I have a brother and a sister - their names are Daniel Jay Wang, and Stephanie Ann Wang. Following the similar naming scheme. Let's guess their Chinese names:
 {{< details "Reveal Hint 1" >}}
-Hint 1: They also have two syllable names
+They both have two syllable names
 {{< /details >}}
 {{< details "Reveal Hint 2" >}}
-Hint 2: They are also common Chinese names, with famous people sharing the same name
+Their names are common Chinese names, with famous people sharing the same name
 {{< /details >}}
 {{< details "Reveal Answer" >}}
 Daniel Jay Wang: 王傑(杰), Stephanie Ann Wang: 王安
@@ -55,11 +55,11 @@ I was once a math person, wanted to have a career in academia, doing algebraic g
 
 ## My Goals
 
-Currently I am in the process of job / internship search. After graduation, I realized that there are so many kinds of jobs in the "data field" - business intelligence, business analytics, data management, data analytics, data engineering, data scientist, machine learning engineer, statistical programmer, statistical analyst, research roles, ...  so I am continue learning new tools, relevant technologies, related theories during the mean time, as well as building projects demonstrating data-related skills.
+Currently I am in the process of job / internship search. After graduation, I realized that there are so many kinds of jobs in the "data field" - business intelligence, business analytics, data management, data analytics, data engineering, data scientist, machine learning engineer, statistical programmer, statistical analyst, research roles, data architect, ...  so I am still learning new tools, relevant technologies, related theories during the mean time, as well as building projects demonstrating data-related skills.
 
-The short-term goal is to obtain work experience, know as much thing in different areas of the data field, and get to a 
+The short-term goal is to obtain work experience, know as much thing in different areas of the data field, and get good at least in data analytics. As for mid-term goal (say 5-10 years), I am still open to all kinds of possibilities - whether it being a transition to a data scientist role, or even doing a PhD in optimization.
 
-In some sense, I would envision an ideal life to be something like[^4]:
+However, I would envision an ideal life to be something like[^4]:
 
 ```kroki {type=mermaid}
 %%{init: {'theme': 'base', 'themeVariables': { 'pie1': '#e8dff5', 'pie2': '#fce1e4', 'pie3': '#fcf4dd', 'pie4': '#ddedea', 'pie5': '#daeaf6'}}}%%
