@@ -1,7 +1,7 @@
 ---
 title: "My Math Journey"
 description: "Blog post on my math journey."
-summary: "Review of courses in OMSA."
+summary: "Blog post on my math journey."
 date: 2024-12-18T13:37:28-05:00
 lastmod: 2024-12-18T13:37:28-05:00
 draft: false

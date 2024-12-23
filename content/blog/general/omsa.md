@@ -37,6 +37,8 @@ The list of courses I have taken are as follows:
 |     `CS7280` |      NS      |   🌻 24 SU   |    Track Elect.    |
 |    `CSE8803` |     ANLP     |   🍁 24 FA   |    Track Elect.    |
 |    `CSE6748` |     Prac     |   🍁 24 FA   |     Practicum.     |
+|    `ISYE6669` |     DO|   🌸 25 SP   |    OR Elect.    |
+|    `CS7643` |     DL|   🌸 25 SP   |     Track Elect.     |
 
 My ratings are as follows:
 
@@ -53,6 +55,10 @@ My ratings are as follows:
 |            [NS](#9-network-science)             |   🟩`04/10`    |   🫢`05/10`   |  🟨`05/10`   |
 | [ANLP](#10-applied-natural-language-processing) |   🟩`03/10`    |   🫢`06/10`   |  🟩`04/10`   |
 |     [Prac](#11-applied-analytics-practicum)     |   🟨`05/10`    |   😊`08/10`   |  🟧`07/10`   |
+|    [DO](#12-deterministic-optimization) |IP|IP|IP|
+|    [DL](#13-deep-learning) |IP|IP|IP|
+
+*IP = In Progress
 
 ## Course Reviews
 
@@ -227,6 +233,10 @@ For what follows, DEW = Difficulty/Enjoyment/Workload ratings.
   - One also has to watch course videos, accounting for 20% of the grade. For the course videos, the check marks might not indicate a full completion score - **jumping within videos will result in point deductions**.
 - **Misc.**: It was in this project that I discovered the crazy power of PowerBI, when I witnessed my teammate using it.
 
-#### 12. Classes I might Take After I Graduate
+#### 12. Deterministic Optimization
 
-DL (Deep Learning), DO (Deterministic Optimization).
+In progress.
+
+#### 13. Deep Learning
+
+In progress.
