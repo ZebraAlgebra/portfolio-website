@@ -15,7 +15,7 @@ seo:
   noindex: false # false (default) or true
 ---
 
-{{< callout context="tip" title="Last updated on 2024-12-19" icon="outline/progress-check" >}}{{< /callout >}}
+{{< callout context="tip" title="Last updated on 2024-12-26" icon="outline/progress-check" >}}{{< /callout >}}
 
 This is a ["Now" Page](https://nownownow.com/about).
 
@@ -37,10 +37,10 @@ This is a ["Now" Page](https://nownownow.com/about).
 - {{< inline-svg "outline/briefcase-2">}} **Job**. Applying for jobs! As well as refining resume.
 - {{< inline-svg "outline/code">}} **Project Building**. Building a project on the [College Scorecard Open Data](https://collegescorecard.ed.gov/data/). The plan:
     - The project would consist of two parts -
-        1. Build a sqlite database from the raw data files, and document it, using this site.
+        1. Build a PostgresSQL database from the raw data files, document it, using this site.
         2. Build interactive visualizations from the files, using a subset of the data.
     - Technology:
-        1. Use `visx` + `MUI` + `react` for visualization, UI, interactivity, and deploy on [Vercel](https://vercel.com/).
+        1. The visualization would consist of a webapp, using [`visx`](https://airbnb.io/visx/) + [`DaisyUI`](https://daisyui.com/) + [`NextJS`](https://nextjs.org/) + [`ReactJS`](https://react.dev/), and deploy on [Vercel](https://vercel.com/).
         2. Use `pandas`, `polars` for data wranggling.
 - {{< inline-svg "outline/writing">}} **Website Content Generation**. Plan to add:
     - Math: Commonly-used Function classes (notions on convexity, self-concordance, PL(Polyak-Łojasiewicz)), Interior point methods, Gradient Methods, Lower Bounds.

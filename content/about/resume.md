@@ -29,11 +29,11 @@ A PDF version can be found [here](https://drive.google.com/drive/folders/1fhbh23
 
 ## Education
 
-| Start     | End       | School | Degree       | Location       |
-| :-------- | :-------- | :----- | :----------- | :------------- |
-| `2016/08` | `2020/05` | NTU    | BS Math      | `TPE, TW`      |
-| `2022/02` | `2023/05` | NTU    | MS Math      | `TPE, TW`      |
-| `2023/08` | `2024/12` | GT     | MS Analytics | `ATL, GA, USA` |
+| Start ~ End| Inst. & Deg. | Loc. |
+| :----------------: | :----------------: | :-------------: |
+| `2016/08` ~ `2020/05` | NTU - BS Math      | `TPE, TW`      |
+| `2022/02` ~ `2023/05` | NTU - MS Math      | `TPE, TW`      |
+| `2023/08` ~ `2024/12` | GT  - MS Analytics | `ATL, GA` |
 
 \*(NTU, GT) = (National Taiwan University, Georgia Institute of Technology)
 
@@ -51,7 +51,7 @@ A PDF version can be found [here](https://drive.google.com/drive/folders/1fhbh23
 
 ## Working Experience
 
-- **MedTrans Go Internship** `2024/09-2024/12` `Python` `PowerBI` `Time Series Analysis`
+- **Data Analytics Project Practicum Intern** `2024/09-2024/12` `Python` `PowerBI` `Time Series Analysis` (@MedTranso Go + GT)
   - A practicum project sponsered by [MedTrans Go](https://www.medtransgo.com/), an end-to-end data analytics tasks, aiming to quantify and analyze tech updates on sales, as well as identifying other underlying patterns of requests.
   - Project details can be found in this project page: [**Applied Analytics Practicum**](/about/projects/prac).
 - **Teaching Assistant and Research Assistant** `2019/08-2023/05` (@NTU, Math Department)
