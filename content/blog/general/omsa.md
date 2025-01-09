@@ -5,7 +5,7 @@ summary: "Review of courses in OMSA."
 date: 2024-11-29T13:37:28-05:00
 lastmod: 2024-11-29T13:37:28-05:00
 draft: false
-weight: 50
+weight: -200
 categories: ["omsa"]
 tags: ["review"]
 contributors: []

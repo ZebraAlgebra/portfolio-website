@@ -5,7 +5,7 @@ summary: "Blog post on my math journey."
 date: 2024-12-18T13:37:28-05:00
 lastmod: 2024-12-18T13:37:28-05:00
 draft: false
-weight: 100
+weight: -100
 categories: ["life"]
 tags: ["life"]
 contributors: []

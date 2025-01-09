@@ -5,7 +5,7 @@ summary: "First post on Hugo Blog!"
 date: 2024-11-18T23:03:20+02:00
 lastmod: 2024-11-18T23:03:20+02:00
 draft: false
-weight: 50
+weight: 0
 categories: ["webdev"]
 tags: ["Hugo"]
 contributors: []
